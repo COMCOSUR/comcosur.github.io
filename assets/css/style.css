@@ -50,3 +50,24 @@ footer {
   background-color: #06110c;
   color: #8bbfa6;
 }
+
+/* Ocultar botón View on GitHub */
+.btn {
+  display: none !important;
+}
+
+/* Ocultar texto Hosted on GitHub Pages */
+footer, .site-footer {
+  display: none !important;
+}
+
+/* Ajustar header para que sea más verde profundo */
+header {
+  background: linear-gradient(to right, #0b2a1a, #12452c) !important;
+}
+
+/* Centrar contenido principal */
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+}
