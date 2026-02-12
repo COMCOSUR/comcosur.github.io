@@ -1,3 +1,52 @@
-theme: jekyll-theme-midnight
-title: COMCOSUR
-description: BALCOM – Biblioteca Latino-Americana COMCOSUR
+---
+---
+
+/* ===== BALCOM / COMCOSUR ESTILO ECO-CULTURAL ===== */
+
+body {
+  background-color: #081a12;   /* Verde bosque profundo */
+  color: #e6f2ea;              /* Texto claro natural */
+  font-family: "Georgia", serif;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  color: #b7f3d1;
+  letter-spacing: 1px;
+}
+
+/* Enlaces */
+a {
+  color: #6dd6a3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b7f3d1;
+  text-decoration: underline;
+}
+
+/* Línea divisoria */
+hr {
+  border: none;
+  border-top: 1px solid #1f3a2a;
+  margin: 30px 0;
+}
+
+/* Header degradado verde */
+header {
+  background: linear-gradient(to right, #0b2a1a, #12452c);
+}
+
+/* Contenedor principal más oscuro */
+.page-content {
+  background-color: #0e2419;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+/* Footer más tenue */
+footer {
+  background-color: #06110c;
+  color: #8bbfa6;
+}
