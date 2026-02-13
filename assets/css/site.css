@@ -286,3 +286,49 @@ a{ color:white; text-decoration:none; }
   .logo{width:180px}
   .balcom-logo{width:220px}
 }
+
+.nav-flex{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo-small{
+  width:40px;
+}
+
+.hero-center{
+  text-align:center;
+}
+
+.logo-hero{
+  width:120px;
+  margin-bottom:20px;
+}
+
+.balcom-flex{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.balcom-text{
+  flex:1;
+}
+
+.balcom-img{
+  flex:1;
+  text-align:center;
+}
+
+.balcom-img img{
+  max-width:280px;
+  border-radius:18px;
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
