@@ -1,80 +1,166 @@
+/* ===== BALCOM / COMCOSUR · ESTILO ÚNICO ===== */
+
 body{
-    margin:0;
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg,#0a2e1a,#145c33);
-    color:#e8f5ec;
+  margin:0;
+  font-family:'Montserrat', sans-serif;
+  background:linear-gradient(135deg,#0a2e1a,#145c33);
+  color:#e8f5ec;
 }
 
-/* MENU */
-.menu{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    padding:15px;
-    background:#07130b;
-    position:sticky;
-    top:0;
+/* Menú superior */
+.nav{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:rgba(7,19,11,.92);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid #1f3a2a;
+}
+.nav-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:12px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  white-space:nowrap;
+}
+.brand img{
+  width:34px;
+  height:34px;
+  border-radius:10px;
+  object-fit:cover;
+}
+.brand .t1{ font-weight:600; letter-spacing:1px; }
+.brand .t2{ opacity:.75; font-size:12px; margin-top:2px; }
+
+.links{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.links a{
+  color:#c9f7dc;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid transparent;
+  transition:.2s;
+}
+.links a:hover{
+  border-color:#1f3a2a;
+  background:#0b1d12;
 }
 
-.menu a{
-    color:#c9f7dc;
-    text-decoration:none;
-    font-weight:600;
-    font-size:14px;
-}
-
-.menu a:hover{
-    color:white;
-}
-
-/* HERO */
+/* Hero */
 .hero{
-    text-align:center;
-    padding:80px 20px;
+  text-align:center;
+  padding:70px 20px 30px 20px;
 }
-
 .logo{
-    width:180px;
+  width:200px;
+  border-radius:18px;
+}
+.comcosur{
+  margin-top:15px;
+  font-size:20px;
+  letter-spacing:3px;
+  opacity:.8;
+}
+.balcom{
+  font-family:'Playfair Display', serif;
+  font-size:68px;
+  letter-spacing:4px;
+  margin:10px 0;
+  color:#c9f7dc;
+}
+.sub{ font-size:20px; font-weight:600; }
+.tag{
+  margin-top:18px;
+  font-style:italic;
+  opacity:.9;
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-h1{
-    font-family:'Playfair Display', serif;
-    font-size:60px;
-    margin:10px 0;
+.boton{
+  display:inline-block;
+  margin-top:26px;
+  padding:14px 30px;
+  background:#1f7a48;
+  border-radius:40px;
+  font-weight:600;
+  transition:0.3s;
+}
+.boton:hover{
+  background:#30a862;
+  transform:scale(1.05);
 }
 
+/* Secciones */
+.seccion{
+  max-width:950px;
+  margin:30px auto 70px auto;
+  padding:40px;
+  background:#0c2116;
+  border-radius:20px;
+}
 h2{
-    font-family:'Playfair Display', serif;
-    font-size:30px;
-    margin-bottom:10px;
+  font-family:'Playfair Display', serif;
+  font-size:34px;
+  margin-bottom:15px;
+  color:#bdf2d4;
+}
+hr{
+  border:none;
+  border-top:1px solid #1f3a2a;
+  margin:40px 0;
 }
 
-.section{
-    max-width:900px;
-    margin:60px auto;
-    padding:40px;
-    background:#0c2116;
-    border-radius:20px;
+.balcom-block{ text-align:center; }
+.balcom-logo{
+  width:260px;
+  border-radius:18px;
+  margin:10px 0 18px 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
 }
-
-/* GRID */
-.grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+.balcom-title{
+  font-family:'Playfair Display', serif;
+  font-size:40px;
+  margin:0;
+  color:#c9f7dc;
+  letter-spacing:2px;
 }
+.balcom-sub{ margin-top:10px; opacity:.95; font-weight:600; }
 
-.card{
-    background:#0f2e1f;
-    padding:25px;
-    border-radius:15px;
+/* Footer */
+.footer{
+  background:rgba(7,19,11,.92);
+  border-top:1px solid #1f3a2a;
+  padding:28px 16px;
+  text-align:center;
+  color:#c9f7dc;
+  opacity:.95;
 }
+.footer small{ opacity:.85; }
 
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:40px;
-    background:#07130b;
-    margin-top:60px;
-    font-size:14px;
+/* Links generales */
+a{ color:white; text-decoration:none; }
+
+/* Responsive */
+@media (max-width: 700px){
+  .balcom{font-size:52px}
+  .seccion{padding:26px}
+  .links{gap:8px}
+  .balcom-logo{width:220px}
 }
