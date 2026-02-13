@@ -6,179 +6,9 @@
 <title>COMCOSUR · BALCOM</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
 
-<style>
-  body{
-    margin:0;
-    font-family:'Montserrat', sans-serif;
-    background:linear-gradient(135deg,#0a2e1a,#145c33);
-    color:#e8f5ec;
-  }
-
-  /* MENÚ */
-  .nav{
-    position:sticky;
-    top:0;
-    z-index:999;
-    background:rgba(7,19,11,.92);
-    backdrop-filter: blur(10px);
-    border-bottom:1px solid #1f3a2a;
-  }
-  .nav-inner{
-    max-width:1100px;
-    margin:0 auto;
-    padding:12px 16px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:16px;
-  }
-  .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    white-space:nowrap;
-  }
-  .brand img{
-    width:34px;
-    height:34px;
-    border-radius:10px;
-    object-fit:cover;
-  }
-  .brand .t1{
-    font-weight:600;
-    letter-spacing:1px;
-  }
-  .brand .t2{
-    opacity:.75;
-    font-size:12px;
-    margin-top:2px;
-  }
-
-  .links{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
-    justify-content:flex-end;
-  }
-  .links a{
-    color:#c9f7dc;
-    text-decoration:none;
-    font-weight:600;
-    font-size:14px;
-    padding:8px 10px;
-    border-radius:999px;
-    border:1px solid transparent;
-    transition:.2s;
-  }
-  .links a:hover{
-    border-color:#1f3a2a;
-    background:#0b1d12;
-  }
-
-  /* HERO */
-  .hero{
-    text-align:center;
-    padding:70px 20px 30px 20px;
-  }
-  .logo{
-    width:200px;
-    border-radius:18px;
-  }
-  .comcosur{
-    margin-top:15px;
-    font-size:20px;
-    letter-spacing:3px;
-    opacity:.8;
-  }
-  .balcom{
-    font-family:'Playfair Display', serif;
-    font-size:68px;
-    letter-spacing:4px;
-    margin:10px 0;
-    color:#c9f7dc;
-  }
-  .sub{
-    font-size:20px;
-    font-weight:600;
-  }
-  .tag{
-    margin-top:18px;
-    font-style:italic;
-    opacity:.9;
-    max-width:760px;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .boton{
-    display:inline-block;
-    margin-top:26px;
-    padding:14px 30px;
-    background:#1f7a48;
-    border-radius:40px;
-    font-weight:600;
-    transition:0.3s;
-  }
-  .boton:hover{
-    background:#30a862;
-    transform:scale(1.05);
-  }
-  a{ color:white; text-decoration:none; }
-
-  /* SECCIONES */
-  .seccion{
-    max-width:950px;
-    margin:30px auto 70px auto;
-    padding:40px;
-    background:#0c2116;
-    border-radius:20px;
-  }
-  h2{
-    font-family:'Playfair Display', serif;
-    font-size:34px;
-    margin-bottom:15px;
-    color:#bdf2d4;
-  }
-  hr{
-    border:none;
-    border-top:1px solid #1f3a2a;
-    margin:40px 0;
-  }
-
-  /* BLOQUE BALCOM (logo nuevo) */
-  .balcom-block{
-    text-align:center;
-  }
-  .balcom-logo{
-    width:260px;
-    border-radius:18px;
-    margin:10px 0 18px 0;
-    box-shadow: 0 12px 30px rgba(0,0,0,.35);
-  }
-  .balcom-title{
-    font-family:'Playfair Display', serif;
-    font-size:40px;
-    margin:0;
-    color:#c9f7dc;
-    letter-spacing:2px;
-  }
-  .balcom-sub{
-    margin-top:10px;
-    opacity:.95;
-    font-weight:600;
-  }
-
-  /* Responsive */
-  @media (max-width: 700px){
-    .balcom{font-size:52px}
-    .seccion{padding:26px}
-    .links{gap:8px}
-    .balcom-logo{width:220px}
-  }
-</style>
 </head>
-
 <body>
 
 <!-- MENÚ SUPERIOR -->
@@ -210,14 +40,14 @@
   <div class="balcom">BALCOM</div>
   <div class="sub">Biblioteca Latino-Americana COMCOSUR</div>
   <div class="tag">
-    Espacio dedicado a la conservación de la naturaleza, el patrimonio biocultural,
-    la biodiversidad y el estudio de las plantas de nuestra región.
+    Espacio dedicado a la conservación de la naturaleza,
+    la biodiversidad y el patrimonio biocultural del territorio.
   </div>
 
   <a href="estudios.html"><div class="boton">Ir a Estudios</div></a>
 </div>
 
-<!-- SECCIÓN BALCOM (logo de BALCOM) -->
+<!-- SECCIÓN BALCOM -->
 <div class="seccion">
   <div class="balcom-block">
     <img class="balcom-logo" src="assets/img/balcom-logo.jpg" alt="Logo BALCOM">
@@ -230,17 +60,23 @@
   <h2>¿Qué es BALCOM?</h2>
   <p>
     BALCOM es la biblioteca virtual de COMCOSUR. Desde un “balcón” —una mirada amplia,
-    panorámica e integradora— reúne estudios propios, documentación ambiental,
-    investigaciones botánicas y materiales dedicados a la conservación de la flora,
-    los ecosistemas y el patrimonio natural de la región.
+    panorámica e integradora— reúne estudios propios, documentación ambiental
+    y materiales dedicados a la conservación de la flora y los ecosistemas.
   </p>
 
   <hr>
 
-  <h2>Publicaciones</h2>
+  <h2>Líneas de trabajo</h2>
   <p>
-    Próximamente: catálogo de estudios con fotografías, herbarios digitales y PDF descargables.
+    Conservación de flora nativa · Agroecología · Patrimonio biocultural ·
+    Estudios ambientales · Formación y talleres.
   </p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div>COMCOSUR – Asociación Civil Comunidades Pampa Costera del Sur</div>
+  <small>10 años de trayectoria en conservación y territorio</small>
 </div>
 
 </body>
