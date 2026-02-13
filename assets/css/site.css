@@ -164,3 +164,33 @@ a{ color:white; text-decoration:none; }
   .links{gap:8px}
   .balcom-logo{width:220px}
 }
+
+/* ===== FOOTER BALCOM ===== */
+
+.footer {
+    background: linear-gradient(to right, #052e16, #064e3b);
+    color: #cdebd8;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #a7f3d0;
+}
+
+.footer p {
+    font-size: 15px;
+    opacity: 0.85;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.6;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
