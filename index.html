@@ -1,50 +1,141 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>COMCOSUR · BALCOM</title>
-  <style>
-    body{margin:0;font-family:Georgia,serif;background:#07130b;color:#e6f2ea}
-    .hero{padding:48px 16px;background:linear-gradient(90deg,#0b2a1a,#12452c);text-align:center}
-    .wrap{max-width:900px;margin:0 auto;padding:28px 16px}
-    .logo{width:200px;max-width:70vw;border-radius:14px}
-    h1{margin:18px 0 6px 0;letter-spacing:2px}
-    .comcosur{opacity:.85;margin:0;font-size:22px}
-    .balcom{margin:10px 0 0 0;font-size:56px;letter-spacing:3px;color:#b7f3d1}
-    .sub{margin:10px 0 0 0;font-size:18px}
-    .tag{margin:14px 0 0 0;font-style:italic;opacity:.95}
-    hr{border:none;border-top:1px solid #1f3a2a;margin:26px 0}
-    a{color:#8df0b6;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .pill{display:inline-block;margin-top:16px;padding:10px 14px;border:1px solid #1f3a2a;border-radius:999px;background:#0b1d12}
-  </style>
-</head>
-<body>
-  <div class="hero">
-    <img class="logo" src="assets/img/logo.jpeg" alt="Logo COMCOSUR">
-    <p class="comcosur">COMCOSUR</p>
-    <div class="balcom">BALCOM</div>
-    <p class="sub"><strong>Biblioteca Latino-Americana COMCOSUR</strong></p>
-    <p class="tag">Plataforma eco-cultural para el patrimonio biocultural, el Buen Vivir y los derechos humanos.</p>
-    <div class="pill">
-      <a href="estudios.html">Ir a Estudios</a>
-    </div>
-  </div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>COMCOSUR · BALCOM</title>
 
-  <div class="wrap">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Montserrat', sans-serif;
+    background:linear-gradient(135deg,#0a2e1a,#145c33);
+    color:#e8f5ec;
+}
+
+/* HERO PRINCIPAL */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.logo{
+    width:200px;
+    border-radius:18px;
+}
+
+.comcosur{
+    margin-top:15px;
+    font-size:20px;
+    letter-spacing:3px;
+    opacity:.8;
+}
+
+.balcom{
+    font-family:'Playfair Display', serif;
+    font-size:68px;
+    letter-spacing:4px;
+    margin:10px 0;
+    color:#c9f7dc;
+}
+
+.sub{
+    font-size:20px;
+    font-weight:600;
+}
+
+.tag{
+    margin-top:18px;
+    font-style:italic;
+    opacity:.9;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    background:#1f7a48;
+    border-radius:40px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.boton:hover{
+    background:#30a862;
+    transform:scale(1.05);
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+/* CONTENIDO */
+
+.seccion{
+    max-width:900px;
+    margin:60px auto;
+    padding:40px;
+    background:#0c2116;
+    border-radius:20px;
+}
+
+h2{
+    font-family:'Playfair Display', serif;
+    font-size:34px;
+    margin-bottom:15px;
+    color:#bdf2d4;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #1f3a2a;
+    margin:40px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <img class="logo" src="assets/img/logo.jpeg" alt="Logo COMCOSUR">
+    <div class="comcosur">COMCOSUR</div>
+    <div class="balcom">BALCOM</div>
+    <div class="sub">Biblioteca Latino-Americana COMCOSUR</div>
+    <div class="tag">
+        Espacio dedicado a la conservación de la naturaleza, el patrimonio biocultural,
+        la biodiversidad y el estudio de las plantas de nuestra región.
+    </div>
+
+    <a href="estudios.html">
+        <div class="boton">Ir a Estudios</div>
+    </a>
+</div>
+
+<div class="seccion">
     <h2>¿Qué es BALCOM?</h2>
     <p>
-      BALCOM es la biblioteca virtual de COMCOSUR. Desde un “balcón” —una mirada amplia,
-      panorámica e inclusiva— reúne estudios propios, documentación ambiental, memoria biocultural
-      y materiales para el debate del Buen Vivir, soberanía alimentaria, autogestión, culturas originarias
-      y derechos humanos.
+        BALCOM es la biblioteca virtual de COMCOSUR. Desde un “balcón” —una mirada amplia,
+        panorámica e integradora— reúne estudios propios, documentación ambiental,
+        investigaciones botánicas y materiales dedicados a la conservación de la flora,
+        los ecosistemas y el patrimonio natural de la región.
     </p>
 
     <hr>
 
     <h2>Publicaciones</h2>
-    <p>Próximamente: catálogo de estudios con fotos y PDF descargables.</p>
-  </div>
+    <p>
+        Próximamente: catálogo de estudios con fotografías, herbarios digitales y PDF descargables.
+    </p>
+</div>
+
 </body>
 </html>
