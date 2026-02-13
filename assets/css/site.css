@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg,#0a2e1a,#145c33);
+    color:#e8f5ec;
+}
+
+/* MENU */
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:15px;
+    background:#07130b;
+    position:sticky;
+    top:0;
+}
+
+.menu a{
+    color:#c9f7dc;
+    text-decoration:none;
+    font-weight:600;
+    font-size:14px;
+}
+
+.menu a:hover{
+    color:white;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.logo{
+    width:180px;
+}
+
+h1{
+    font-family:'Playfair Display', serif;
+    font-size:60px;
+    margin:10px 0;
+}
+
+h2{
+    font-family:'Playfair Display', serif;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.section{
+    max-width:900px;
+    margin:60px auto;
+    padding:40px;
+    background:#0c2116;
+    border-radius:20px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#0f2e1f;
+    padding:25px;
+    border-radius:15px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    background:#07130b;
+    margin-top:60px;
+    font-size:14px;
+}
