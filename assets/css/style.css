@@ -1,23 +1,42 @@
 ---
 ---
 
-/* ===== BALCOM / COMCOSUR ESTILO ECO-CULTURAL ===== */
+/* ===== BALCOM / COMCOSUR ESTILO ECO-CULTURAL COMPLETO ===== */
 
+/* Fondo general */
 body {
-  background-color: #081a12;   /* Verde bosque profundo */
-  color: #e6f2ea;              /* Texto claro natural */
+  background: linear-gradient(to right, #081a12, #0f2e1f);
+  color: #e6f2ea;
   font-family: "Georgia", serif;
+  margin: 0;
+}
+
+/* Wrapper más centrado */
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Header verde profundo */
+header {
+  background: linear-gradient(to right, #0b2a1a, #12452c) !important;
+  padding: 30px 0;
 }
 
 /* Títulos */
 h1, h2, h3 {
   color: #b7f3d1;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+}
+
+/* BALCOM más protagonista */
+h1 {
+  font-size: 52px;
 }
 
 /* Enlaces */
 a {
-  color: #6dd6a3;
+  color: #8df0b6;
   text-decoration: none;
 }
 
@@ -33,41 +52,24 @@ hr {
   margin: 30px 0;
 }
 
-/* Header degradado verde */
-header {
-  background: linear-gradient(to right, #0b2a1a, #12452c);
+/* Quitar botón "View on GitHub" */
+a.btn,
+.btn,
+.btn-github,
+.button,
+.button:hover,
+header a[href*="github.com"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
 }
 
-/* Contenedor principal más oscuro */
-.page-content {
-  background-color: #0e2419;
-  padding: 30px;
-  border-radius: 12px;
-}
-
-/* Footer más tenue */
+/* Quitar textos del footer del tema */
+.project-maintained,
+.site-footer,
 footer {
-  background-color: #06110c;
-  color: #8bbfa6;
-}
-
-/* Ocultar botón View on GitHub */
-.btn {
   display: none !important;
-}
-
-/* Ocultar texto Hosted on GitHub Pages */
-footer, .site-footer {
-  display: none !important;
-}
-
-/* Ajustar header para que sea más verde profundo */
-header {
-  background: linear-gradient(to right, #0b2a1a, #12452c) !important;
-}
-
-/* Centrar contenido principal */
-.wrapper {
-  max-width: 900px;
-  margin: auto;
 }
