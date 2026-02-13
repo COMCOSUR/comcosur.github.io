@@ -1,75 +1,77 @@
----
----
-
-/* ===== BALCOM / COMCOSUR ESTILO ECO-CULTURAL COMPLETO ===== */
-
-/* Fondo general */
 body {
-  background: linear-gradient(to right, #081a12, #0f2e1f);
-  color: #e6f2ea;
-  font-family: "Georgia", serif;
-  margin: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, #0f3d1e, #0b2a15);
+    color: #f2f2f2;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
 }
 
-/* Wrapper más centrado */
-.wrapper {
-  max-width: 900px;
-  margin: auto;
+/* HERO */
+
+.hero {
+    padding: 80px 20px;
 }
 
-/* Header verde profundo */
-header {
-  background: linear-gradient(to right, #0b2a1a, #12452c) !important;
-  padding: 30px 0;
+.logo-comcosur {
+    width: 120px;
+    margin-bottom: 10px;
 }
 
-/* Títulos */
-h1, h2, h3 {
-  color: #b7f3d1;
-  letter-spacing: 2px;
+.comcosur {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #b5e6c5;
 }
 
-/* BALCOM más protagonista */
-h1 {
-  font-size: 52px;
+.balcom {
+    font-family: 'Cinzel', serif;
+    font-size: 70px;
+    color: #b5e6c5;
+    margin: 10px 0;
 }
 
-/* Enlaces */
-a {
-  color: #8df0b6;
-  text-decoration: none;
+.subtitulo {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-a:hover {
-  color: #b7f3d1;
-  text-decoration: underline;
+.descripcion {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
-/* Línea divisoria */
-hr {
-  border: none;
-  border-top: 1px solid #1f3a2a;
-  margin: 30px 0;
+.btn {
+    background: #145c2b;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-/* Quitar botón "View on GitHub" */
-a.btn,
-.btn,
-.btn-github,
-.button,
-.button:hover,
-header a[href*="github.com"] {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  height: 0 !important;
-  width: 0 !important;
-  overflow: hidden !important;
+.btn:hover {
+    background: #1f7a3a;
 }
 
-/* Quitar textos del footer del tema */
-.project-maintained,
-.site-footer,
-footer {
-  display: none !important;
+/* BALCOM SECTION */
+
+.balcom-section {
+    background: #071d0f;
+    padding: 60px 20px;
+}
+
+.balcom-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.balcom-logo {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.publicaciones {
+    padding: 60px 20px;
 }
