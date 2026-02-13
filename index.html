@@ -2,78 +2,81 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>COMCOSUR / BALCOM</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>COMCOSUR · BALCOM</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
 </head>
 
 <body>
 
-  <!-- MENÚ SUPERIOR -->
-  <div class="topbar">
-    <div class="nav-inner">
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
       <div class="brand">
         <img src="assets/img/logo.jpeg" alt="Logo COMCOSUR">
-        <div>
-          <div class="t1">COMCOSUR</div>
-          <div class="t2">BALCOM · Biblioteca</div>
+        <div class="brand-title">
+          <b>COMCOSUR</b>
+          <span>BALCOM · Biblioteca</span>
         </div>
       </div>
 
-      <div class="navlinks">
-        <a href="index.html">Inicio</a>
+      <nav class="menu">
+        <a class="active" href="index.html">Inicio</a>
         <a href="balcom.html">BALCOM</a>
         <a href="estudios.html">Estudios</a>
         <a href="cuentos.html">Cuentos</a>
         <a href="archivo-visual.html">Archivo Visual</a>
         <a href="contacto.html">Contacto</a>
-      </div>
+      </nav>
     </div>
-  </div>
+  </header>
 
   <!-- HERO -->
-  <div class="container">
-    <div class="hero">
-      <img class="hero-logo" src="assets/img/logo.jpeg" alt="Logo COMCOSUR">
-      <div class="hero-small">COMCOSUR</div>
-      <h1 class="hero-title">BALCOM</h1>
-      <div class="hero-sub">Biblioteca Latino-Americana COMCOSUR</div>
-      <div class="hero-claim p">
-        Espacio dedicado a la conservación de la naturaleza, la biodiversidad y el patrimonio biocultural del territorio.
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img class="logo" src="assets/img/logo.jpeg" alt="Logo COMCOSUR">
+        <div class="kicker">COMCOSUR</div>
+        <h1>BALCOM</h1>
+        <p class="sub"><b>Biblioteca Latino-Americana COMCOSUR</b><br>
+          Espacio dedicado a la conservación de la naturaleza, la biodiversidad y el patrimonio biocultural del territorio.
+        </p>
+        <a class="btn" href="estudios.html">Ir a Estudios</a>
       </div>
-      <a class="btn" href="estudios.html">Ir a Estudios</a>
-    </div>
+    </section>
 
-    <!-- SECCIÓN BALCOM (logo balcom) -->
-    <div class="card balcom-block">
-      <img class="balcom-logo" src="assets/img/balcom-logo.jpg" alt="Logo BALCOM">
-      <div class="balcom-title">BALCOM</div>
-      <div class="balcom-sub">Biblioteca Latino-Americana COMCOSUR</div>
-    </div>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h2>¿Qué es BALCOM?</h2>
+          <p>
+            BALCOM es la biblioteca virtual de COMCOSUR. Desde un “balcón” —una mirada amplia y panorámica—
+            reúne estudios propios, documentación ambiental y materiales dedicados a la conservación de la flora
+            y los ecosistemas.
+          </p>
+          <div class="hr"></div>
 
-    <!-- PRESENTACIÓN -->
-    <div class="card">
-      <div class="h2">¿Qué es BALCOM?</div>
-      <p class="p">
-        BALCOM es la biblioteca virtual de COMCOSUR. Desde un “balcón” —una mirada amplia, panorámica e integradora—
-        reúne estudios propios, documentación ambiental, memoria biocultural y materiales dedicados a la conservación
-        de la flora y los ecosistemas.
-      </p>
+          <h2>Publicaciones</h2>
+          <p>Próximamente: catálogo de estudios con foto de portada y PDF descargable.</p>
 
-      <div class="hr"></div>
+          <div class="hr"></div>
 
-      <div class="h2">Publicaciones</div>
-      <p class="p">Próximamente: catálogo de investigaciones con foto de portada y PDF descargable.</p>
-    </div>
-  </div>
+          <div style="text-align:center">
+            <img class="balcom-logo" src="assets/img/balcom-logo.jpg" alt="Logo BALCOM">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
-  <div class="footer">
-    <div class="inner">
-      <strong>COMCOSUR — Asociación Civil Comunidades Pampa Costera del Sur</strong><br>
-      <small>10 años de trayectoria en conservación y territorio</small>
+  <footer class="footer">
+    <div class="container">
+      <div>COMCOSUR – Asociación Civil Comunidades Pampa Costera del Sur</div>
+      <div>10 años de trayectoria en conservación y territorio</div>
     </div>
-  </div>
+  </footer>
 
 </body>
 </html>
+
