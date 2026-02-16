@@ -2,29 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Artículos · BALCOM</title>
-
-  <!-- CSS ÚNICO DEL SITIO (IMPORTANTE) -->
-  <link rel="stylesheet" href="assets/css/site.css?v=1" />
-
-  <meta name="description" content="Artículos y publicaciones en PDF sobre conservación, flora nativa, humedales y territorio. BALCOM · COMCOSUR." />
+  <link rel="stylesheet" href="assets/css/site.css?v=2" />
 </head>
 
 <body>
 
-  <!-- TOPBAR (MISMO MENÚ EN TODAS LAS PÁGINAS) -->
-  <header class="topbar">
+  <!-- NAV -->
+  <header class="nav">
     <div class="container nav-inner">
-
-      <a class="brand" href="index.html">
-        <!-- OJO: este archivo tiene que EXISTIR tal cual en assets/img/ -->
-        <img class="brand-logo" src="assets/img/logo.jpeg" alt="Logo COMCOSUR" />
-        <div class="brand-text">
-          <div class="brand-title">COMCOSUR</div>
-          <div class="brand-subtitle">BALCOM · Biblioteca</div>
+      <div class="brand">
+        <img src="assets/img/logo.jpeg" alt="Logo COMCOSUR">
+        <div class="brand-title">
+          <b>COMCOSUR</b>
+          <span>BALCOM · Biblioteca</span>
         </div>
-      </a>
+      </div>
 
       <nav class="menu">
         <a href="index.html">Inicio</a>
@@ -34,96 +28,100 @@
         <a href="archivo-visual.html">Archivo Visual</a>
         <a href="contacto.html">Contacto</a>
       </nav>
-
     </div>
   </header>
 
   <main>
 
-    <!-- HERO / CABECERA -->
+    <!-- CABECERA -->
     <section class="section">
       <div class="container">
         <div class="card">
-          <h1 class="section-title">ARTÍCULOS</h1>
-          <p class="muted">
+          <h1 class="section-title">Artículos</h1>
+          <p>
             Acá vas a subir PDFs con una portada, un resumen corto y descarga directa.
+            (Después sumamos buscador, etiquetas y filtro por tema.)
           </p>
         </div>
-      </div>
-    </section>
 
-    <!-- GRID DE ARTÍCULOS -->
-    <section class="section">
-      <div class="container">
-
-        <div class="pdf-grid">
+        <!-- GRID ARTÍCULOS -->
+        <div class="grid">
 
           <!-- ARTÍCULO 1 -->
-          <article class="pdf-card">
-            <img class="pdf-cover" src="assets/img/portadas/portada-1.jpg" alt="Portada del artículo" />
-            <div class="pdf-body">
-              <div class="pdf-meta">
-                <span class="pill">📍 Territorio</span>
-                <span class="pill">🌿 Flora nativa</span>
+          <article class="article">
+            <div class="cover">Portada del artículo</div>
+            <div class="article-body">
+              <div class="tags">
+                <span class="tag">📍 Territorio</span>
+                <span class="tag">🌿 Flora nativa</span>
               </div>
 
-              <h2 class="pdf-title">TÍTULO DEL ARTÍCULO 1</h2>
-              <p class="pdf-desc">
-                Resumen breve (3–6 líneas). Contá de qué trata, qué mira o qué aporta.
+              <h3>TÍTULO DEL ARTÍCULO 1</h3>
+              <p>
+                Resumen breve (3–5 líneas). Contá de qué trata, qué mira o qué aporta.
                 Ideal: tema, lugar y una idea fuerza.
               </p>
 
-              <div class="pdf-actions">
-                <a class="btn-secondary" href="balcom.html">Ver BALCOM</a>
-                <a class="btn-primary" href="assets/pdfs/articulo-1.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+              <div class="actions">
+                <a class="action" href="balcom.html">Ver BALCOM</a>
+                <a class="action primary" href="assets/pdfs/tu-archivo-1.pdf" target="_blank" rel="noopener">Descargar PDF</a>
               </div>
             </div>
           </article>
 
           <!-- ARTÍCULO 2 -->
-          <article class="pdf-card">
-            <img class="pdf-cover" src="assets/img/portadas/portada-2.jpg" alt="Portada del artículo" />
-            <div class="pdf-body">
-              <div class="pdf-meta">
-                <span class="pill">🧪 Suelos</span>
-                <span class="pill">💧 Humedales</span>
+          <article class="article">
+            <div class="cover">Portada del artículo</div>
+            <div class="article-body">
+              <div class="tags">
+                <span class="tag">🧪 Suelos</span>
+                <span class="tag">💧 Humedales</span>
               </div>
 
-              <h2 class="pdf-title">TÍTULO DEL ARTÍCULO 2</h2>
-              <p class="pdf-desc">
-                Otro resumen. Si todavía no subiste el PDF, dejalo como plantilla y después
-                cambiás el link.
+              <h3>TÍTULO DEL ARTÍCULO 2</h3>
+              <p>
+                Otro resumen. Si todavía no tenés el PDF, igual podés dejarlo armado
+                y luego subir el archivo al repo y cambiar el link.
               </p>
 
-              <div class="pdf-actions">
-                <a class="btn-secondary" href="archivo-visual.html">Archivo Visual</a>
-                <a class="btn-primary" href="assets/pdfs/articulo-2.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+              <div class="actions">
+                <a class="action" href="archivo-visual.html">Archivo Visual</a>
+                <a class="action primary" href="assets/pdfs/tu-archivo-2.pdf" target="_blank" rel="noopener">Descargar PDF</a>
               </div>
             </div>
           </article>
 
           <!-- ARTÍCULO 3 -->
-          <article class="pdf-card">
-            <img class="pdf-cover" src="assets/img/portadas/portada-3.jpg" alt="Portada del artículo" />
-            <div class="pdf-body">
-              <div class="pdf-meta">
-                <span class="pill">🌱 Conservación</span>
-                <span class="pill">🗂️ Registros</span>
+          <article class="article">
+            <div class="cover">Portada del artículo</div>
+            <div class="article-body">
+              <div class="tags">
+                <span class="tag">🌱 Conservación</span>
+                <span class="tag">📚 Registros</span>
               </div>
 
-              <h2 class="pdf-title">TÍTULO DEL ARTÍCULO 3</h2>
-              <p class="pdf-desc">
-                Usalo como plantilla: duplicás la tarjeta y cambiás portada/título/resumen/link.
+              <h3>TÍTULO DEL ARTÍCULO 3</h3>
+              <p>
+                Esto es plantilla: duplicás una tarjeta y cambiás portada/título/resumen/link.
               </p>
 
-              <div class="pdf-actions">
-                <a class="btn-secondary" href="contacto.html">Contacto</a>
-                <a class="btn-primary" href="assets/pdfs/articulo-3.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+              <div class="actions">
+                <a class="action" href="contacto.html">Contacto</a>
+                <a class="action primary" href="assets/pdfs/tu-archivo-3.pdf" target="_blank" rel="noopener">Descargar PDF</a>
               </div>
             </div>
           </article>
 
         </div>
+
+        <!-- SECCIÓN INTERNA (OCULTA) -->
+        <section class="section dev-only">
+          <div class="card">
+            <h2>Cómo vas a subir tus PDFs</h2>
+            <div class="hr"></div>
+            <p>Esto está oculto para el público.</p>
+          </div>
+        </section>
 
       </div>
     </section>
@@ -132,10 +130,8 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div>COMCOSUR – Asociación Civil Comunidades Pampa Costera del Sur</div>
-      <small>10 años de trayectoria en conservación y territorio</small>
-    </div>
+    <div>COMCOSUR – Asociación Civil Comunidades Pampa Costera del Sur</div>
+    <small>10 años de trayectoria en conservación y territorio</small>
   </footer>
 
 </body>
