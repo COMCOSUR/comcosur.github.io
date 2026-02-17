@@ -3,23 +3,23 @@
 :root{
 
   /* Fondo principal */
-  --bg1:#2f7d5a;
-  --bg2:#3fa372;
+  --bg1:#ffffff;
+  --bg2:#f4f9f6;
 
   /* Paneles */
   --panel:#ffffff;
-  --panel2:#f4fbf7;
+  --panel2:#f0f6f2;
 
-  /* Color principal verde claro */
-  --mint:#3fa372;
+  /* Verde principal */
+  --mint:#2e7d32;
 
   /* Botones */
-  --btn:#3fa372;
-  --btn2:#2f7d5a;
+  --btn:#2e7d32;
+  --btn2:#1b5e20;
 
   /* Texto */
-  --text:#1f3a2e;
-  --muted:#4f6f60;
+  --text:#1a1a1a;
+  --muted:#4a4a4a;
 
 }
 
