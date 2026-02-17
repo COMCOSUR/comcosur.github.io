@@ -225,3 +225,74 @@ footer{
   font-size:13px;
   color:var(--muted);
 }
+
+/* =========================
+   FIX: espacios + imágenes
+   Pegar AL FINAL de site.css
+   ========================= */
+
+/* 1) INICIO: menos separación entre secciones / definiciones */
+.section{
+  padding: 36px 0 !important;     /* antes estaba muy alto */
+}
+
+.section .card{
+  margin: 0 auto !important;
+}
+
+.section + .section{
+  margin-top: 18px !important;    /* reduce el “aire” entre bloques */
+}
+
+/* si usás separador tipo .hr */
+.hr{
+  margin: 16px 0 !important;
+}
+
+/* títulos y texto un poco más “compactos” */
+.section-title,
+.section h2{
+  margin: 0 0 14px 0 !important;
+}
+.section p{
+  margin: 0 0 12px 0 !important;
+  line-height: 1.55 !important;
+}
+.section p:last-child{
+  margin-bottom: 0 !important;
+}
+
+
+/* 2) ARTÍCULOS: imágenes (portadas) con tamaño controlado */
+.article-card img,
+.pdf-card img,
+.cards img,
+.grid img,
+main img.cover,
+img.cover{
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 220px !important;       /* CLAVE: evita “gigante” */
+  object-fit: cover !important;    /* recorta prolijo */
+  display: block !important;
+  border-radius: 16px !important;
+}
+
+/* por si alguna portada está dentro de un contenedor específico */
+.article-card .cover,
+.pdf-card .cover{
+  height: 220px !important;
+  overflow: hidden !important;
+  border-radius: 16px !important;
+}
+
+/* achica un poco el espacio vertical entre tarjetas */
+.cards,
+.grid{
+  gap: 18px !important;
+}
+.article-card,
+.pdf-card{
+  margin-bottom: 0 !important;
+}
+
