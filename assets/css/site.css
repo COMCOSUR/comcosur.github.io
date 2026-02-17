@@ -1,298 +1,305 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
-
-/* =========================
-   VARIABLES VERDES ELEGANTES
-========================= */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap");
 
 :root{
-  --bg1:#063d22;
-  --bg2:#0a5a32;
+  /* Fondo principal (como antes: verdes con distintos tonos) */
+  --bg1:#071a12;
+  --bg2:#0b3a24;
 
-  --panel:#0e4d2b;
-  --panel-soft:#146a3c;
+  /* Paneles / tarjetas */
+  --panel:#0b2a1b;
+  --panel2:#0f3a25;
 
-  --accent:#2e8f5b;
-  --accent-strong:#1f6f46;
+  /* Acento */
+  --mint:#2f8f5b;
 
-  --text:#eaf7f0;
-  --muted:#b7e4cf;
+  /* Botones */
+  --btn:#2f8f5b;
+  --btn2:#246f47;
+
+  /* Texto */
+  --text:#e9f5ee;
+  --muted:#b7d6c6;
 }
 
-/* =========================
-   RESET
-========================= */
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-img{
-  max-width:100%;
-  height:auto;
-  display:block;
-}
-
-/* =========================
-   BODY
-========================= */
-
+/* Reset */
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
 body{
-  font-family:"Inter", sans-serif;
-  background:linear-gradient(135deg,var(--bg1),var(--bg2));
+  font-family:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--text);
+  background: radial-gradient(1200px 700px at 50% -200px, rgba(47,143,91,.35), transparent 60%),
+              linear-gradient(135deg, var(--bg1), var(--bg2));
 }
 
-/* =========================
-   CONTENEDOR
-========================= */
+/* Importante: NO romper imágenes (pero controlamos tamaños por clase) */
+img{ max-width:100%; height:auto; }
 
+/* Layout helpers */
 .container{
-  width:90%;
-  max-width:1100px;
-  margin:auto;
+  width:min(1100px, 92vw);
+  margin:0 auto;
+}
+.hr{
+  height:1px;
+  background:rgba(233,245,238,.12);
+  margin:18px 0;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* Tipografías */
+.brand-title, .hero-title, h1, h2, h3{
+  font-family:"Cinzel", serif;
+  letter-spacing:1.5px;
+}
+.brand-title{ font-weight:700; letter-spacing:2.5px; }
+.hero-title{ font-weight:700; letter-spacing:3px; }
 
+/* ===== NAV / TOPBAR ===== */
 .topbar{
-  background:#052f1b;
-  padding:12px 0;
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:rgba(7,26,18,.70);
+  backdrop-filter: blur(12px);
+  border-bottom:1px solid rgba(233,245,238,.10);
 }
-
 .nav-inner{
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:12px 0;
 }
-
 .brand{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
+  min-width:240px;
 }
-
 .brand img{
-  width:42px;
-  height:42px;
+  width:44px;
+  height:44px;
   object-fit:contain;
+  border-radius:10px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(233,245,238,.12);
 }
-
-.brand-title{
-  font-family:"Cinzel", serif;
-  font-size:18px;
-}
-
 .brand-subtitle{
+  display:block;
   font-size:12px;
   color:var(--muted);
+  margin-top:2px;
+  letter-spacing:.3px;
 }
-
+.menu{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  align-items:center;
+  justify-content:flex-end;
+}
 .menu a{
-  text-decoration:none;
   color:var(--text);
-  margin-left:20px;
-  font-weight:500;
+  text-decoration:none;
+  font-weight:600;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid transparent;
+  opacity:.92;
 }
-
 .menu a:hover{
-  color:var(--accent);
+  border-color:rgba(233,245,238,.15);
+  background:rgba(255,255,255,.06);
+  opacity:1;
+}
+.menu a.active{
+  background:rgba(47,143,91,.18);
+  border-color:rgba(47,143,91,.35);
+  opacity:1;
 }
 
-.menu .active{
-  color:var(--accent);
-}
-
-/* =========================
-   HERO (INICIO)
-========================= */
-
+/* ===== HERO (INICIO) ===== */
 .hero{
-  padding:80px 0;
+  padding:54px 0 24px;
   text-align:center;
 }
-
 .hero .logo{
   width:120px;
-  margin:0 auto 20px auto;
-}
-
-.kicker{
-  letter-spacing:3px;
-  font-size:14px;
-  color:var(--muted);
-}
-
-.hero-title{
-  font-family:"Cinzel", serif;
-  font-size:52px;
-  margin:15px 0;
-}
-
-.hero p{
-  max-width:650px;
-  margin:0 auto 25px auto;
-  line-height:1.6;
-  color:var(--muted);
-}
-
-.btn{
-  background:var(--accent);
-  padding:12px 28px;
-  border-radius:30px;
-  text-decoration:none;
-  color:white;
-  font-weight:600;
-  display:inline-block;
-}
-
-.btn:hover{
-  background:var(--accent-strong);
-}
-
-/* =========================
-   SECCIONES
-========================= */
-
-section{
-  padding:70px 0;
-}
-
-.card{
-  background:var(--panel);
-  padding:30px;
+  height:120px;
+  object-fit:contain;
   border-radius:18px;
-  margin-bottom:25px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(233,245,238,.12);
+  margin:0 auto 12px;
 }
-
-.card h2{
-  font-family:"Cinzel", serif;
-  margin-bottom:15px;
-}
-
-/* =========================
-   TARJETAS ARTÍCULOS
-========================= */
-
-.articles-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
-
-.article-card{
-  background:var(--panel-soft);
-  padding:20px;
-  border-radius:16px;
-}
-
-.article-card h3{
-  margin:15px 0 10px 0;
-}
-
-.article-card p{
-  font-size:14px;
+.kicker{
+  font-size:12px;
+  letter-spacing:6px;
   color:var(--muted);
-  margin-bottom:15px;
+  margin-top:8px;
 }
-
-.article-card a{
+.hero-title{
+  font-size:64px;
+  margin:10px 0 10px;
+  line-height:1;
+}
+.sub{
+  color:var(--muted);
+  max-width:860px;
+  margin:0 auto;
+  font-size:16px;
+  line-height:1.6;
+}
+.btn{
   display:inline-block;
-  background:var(--accent);
-  padding:8px 18px;
-  border-radius:20px;
-  color:white;
+  margin-top:18px;
+  background:linear-gradient(180deg, rgba(47,143,91,.9), rgba(36,111,71,.9));
+  color:#072012;
   text-decoration:none;
+  font-weight:800;
+  padding:12px 18px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+.btn:hover{ filter:brightness(1.05); }
+
+/* ===== SECCIONES / TARJETAS ===== */
+.section{
+  padding:34px 0; /* menos separación entre definiciones */
+}
+.card{
+  background:linear-gradient(180deg, rgba(11,42,27,.90), rgba(15,58,37,.88));
+  border:1px solid rgba(233,245,238,.10);
+  border-radius:22px;
+  padding:28px;
+  box-shadow:0 18px 40px rgba(0,0,0,.25);
+}
+.card h2{
+  margin:0 0 12px;
+  font-size:40px;
+}
+.card p{
+  margin:0 0 12px;
+  color:var(--text);
+  opacity:.95;
+  line-height:1.65;
+}
+.card p:last-child{ margin-bottom:0; }
+
+/* ===== BLOQUE BALCOM + IMAGEN AL LADO ===== */
+.balcom-grid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:18px;
+  align-items:stretch;
+}
+.balcom-art{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.balcom-art img{
+  width:min(360px, 100%);
+  border-radius:18px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(233,245,238,.12);
+}
+
+/* ===== ARTÍCULOS (estudios.html) ===== */
+.page-title{
+  font-size:48px;
+  margin:0 0 8px;
+}
+.page-lead{
+  color:var(--muted);
+  margin:0 0 20px;
+  line-height:1.6;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:18px;
+}
+
+.article{
+  background:linear-gradient(180deg, rgba(11,42,27,.90), rgba(15,58,37,.88));
+  border:1px solid rgba(233,245,238,.10);
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 18px 40px rgba(0,0,0,.25);
+  display:flex;
+  flex-direction:column;
+}
+.article-cover{
+  width:100%;
+  height:220px;            /* CLAVE: evita “imagenes gigantes” */
+  object-fit:cover;        /* recorta bonito */
+  display:block;
+}
+.article-body{
+  padding:16px 16px 18px;
+}
+.article-k{
+  font-size:11px;
+  letter-spacing:2px;
+  color:var(--muted);
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
+.article h3{
+  font-size:18px;
+  margin:0 0 8px;
+  letter-spacing:1px;
+}
+.article p{
+  margin:0 0 12px;
+  color:var(--muted);
+  line-height:1.55;
   font-size:14px;
 }
-
-.article-card a:hover{
-  background:var(--accent-strong);
+.actions{
+  margin-top:auto;
+  padding:0 16px 16px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
 }
+.btn-sm{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:800;
+  border:1px solid rgba(233,245,238,.12);
+  background:rgba(255,255,255,.06);
+  color:var(--text);
+}
+.btn-sm.primary{
+  background:linear-gradient(180deg, rgba(47,143,91,.92), rgba(36,111,71,.92));
+  color:#072012;
+}
+.btn-sm:hover{ filter:brightness(1.05); }
 
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-  background:#042a18;
+/* Footer */
+.footer{
+  padding:28px 0 40px;
   text-align:center;
-  padding:25px 0;
-  font-size:13px;
-  color:var(--muted);
+  color:rgba(233,245,238,.75);
+  font-size:12px;
 }
 
-/* =========================
-   FIX: espacios + imágenes
-   Pegar AL FINAL de site.css
-   ========================= */
-
-/* 1) INICIO: menos separación entre secciones / definiciones */
-.section{
-  padding: 36px 0 !important;     /* antes estaba muy alto */
+/* Responsive */
+@media (max-width: 980px){
+  .grid{ grid-template-columns:1fr 1fr; }
+  .hero-title{ font-size:54px; }
 }
-
-.section .card{
-  margin: 0 auto !important;
+@media (max-width: 720px){
+  .nav-inner{ flex-direction:column; align-items:flex-start; }
+  .brand{ min-width:auto; }
+  .menu{ justify-content:flex-start; }
+  .hero-title{ font-size:44px; }
+  .card h2{ font-size:34px; }
+  .balcom-grid{ grid-template-columns:1fr; }
+  .grid{ grid-template-columns:1fr; }
 }
-
-.section + .section{
-  margin-top: 18px !important;    /* reduce el “aire” entre bloques */
-}
-
-/* si usás separador tipo .hr */
-.hr{
-  margin: 16px 0 !important;
-}
-
-/* títulos y texto un poco más “compactos” */
-.section-title,
-.section h2{
-  margin: 0 0 14px 0 !important;
-}
-.section p{
-  margin: 0 0 12px 0 !important;
-  line-height: 1.55 !important;
-}
-.section p:last-child{
-  margin-bottom: 0 !important;
-}
-
-
-/* 2) ARTÍCULOS: imágenes (portadas) con tamaño controlado */
-.article-card img,
-.pdf-card img,
-.cards img,
-.grid img,
-main img.cover,
-img.cover{
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 220px !important;       /* CLAVE: evita “gigante” */
-  object-fit: cover !important;    /* recorta prolijo */
-  display: block !important;
-  border-radius: 16px !important;
-}
-
-/* por si alguna portada está dentro de un contenedor específico */
-.article-card .cover,
-.pdf-card .cover{
-  height: 220px !important;
-  overflow: hidden !important;
-  border-radius: 16px !important;
-}
-
-/* achica un poco el espacio vertical entre tarjetas */
-.cards,
-.grid{
-  gap: 18px !important;
-}
-.article-card,
-.pdf-card{
-  margin-bottom: 0 !important;
-}
-
