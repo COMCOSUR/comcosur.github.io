@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root{
-  --bg1:#0a2e1a;
-  --bg2:#145c33;
 
-  --panel:#0c2116;
-  --panel2:#0b1d12;
+  /* Fondo principal */
+  --bg1:#2f7d5a;
+  --bg2:#3fa372;
 
-  --line:rgba(80, 200, 140, .22);
-  --text:#e8f5ec;
-  --muted:rgba(232,245,236,.82);
+  /* Paneles */
+  --panel:#ffffff;
+  --panel2:#f4fbf7;
 
-  --mint:#c9f7dc;
-  --btn:#1f7a48;
-  --btn2:#30a862;
+  /* Color principal verde claro */
+  --mint:#3fa372;
+
+  /* Botones */
+  --btn:#3fa372;
+  --btn2:#2f7d5a;
+
+  /* Texto */
+  --text:#1f3a2e;
+  --muted:#4f6f60;
+
 }
 
 *{ box-sizing:border-box; }
