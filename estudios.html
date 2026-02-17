@@ -4,93 +4,95 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Artículos · BALCOM</title>
-  <meta name="description" content="Artículos y PDFs ambientales para descargar: sinopsis corta e imagen de portada." />
-  <link rel="stylesheet" href="assets/css/site.css?v=99" />
+  <meta name="description" content="Artículos y publicaciones ambientales con descarga directa en PDF." />
+  <link rel="stylesheet" href="assets/css/site.css?v=200" />
 </head>
-
 <body>
+
   <!-- NAV -->
   <header class="topbar">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/img/logo.jpeg" alt="Logo COMCOSUR" />
-      <div>
-        <div class="brand-title">COMCOSUR</div>
-        <span class="brand-subtitle">BALCOM · Biblioteca</span>
-      </div>
-    </a>
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.jpeg" alt="Logo COMCOSUR" />
+        <div>
+          <div class="brand-title">COMCOSUR</div>
+          <span class="brand-subtitle">BALCOM · Biblioteca</span>
+        </div>
+      </a>
 
-    <nav class="menu">
-      <a href="index.html">Inicio</a>
-      <a href="balcom.html">BALCOM</a>
-      <a href="estudios.html">Artículos</a>
-      <a href="cuentos.html">Cuentos</a>
-      <a href="archivo-visual.html">Archivo Visual</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-</header>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="balcom.html">BALCOM</a>
+        <a class="active" href="estudios.html">Artículos</a>
+        <a href="cuentos.html">Cuentos</a>
+        <a href="archivo-visual.html">Archivo Visual</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <section class="section">
       <div class="container">
-        <h1 class="page-title">ARTÍCULOS</h1>
-        <p class="page-lead">Biblioteca digital con descarga directa de publicaciones ambientales.</p>
+        <h1 class="h1">ARTÍCULOS</h1>
+        <p class="p">Biblioteca digital con descarga directa de publicaciones ambientales.</p>
 
-        <div class="grid">
+        <div class="article-grid">
+
           <!-- 1 -->
-          <article class="article">
-            <img class="article-cover" src="assets/img/portada1.jpeg" alt="Portada HUCOM" />
+          <article class="card article-card">
+            <img class="article-cover" src="assets/img/portada1.jpeg" alt="Porque sembramos lo que sembramos" />
             <div class="article-body">
-              <div class="article-k">HUCOM · Huerta</div>
-              <h3>Porque sembramos lo que sembramos</h3>
-              <p>Huerta experimental de COMCOSUR (HUCOM): qué se siembra y por qué, desde el territorio.</p>
-            </div>
-            <div class="actions">
-              <a class="btn-sm primary" href="assets/pdf/PorqueSembramos.pdf" target="_blank" rel="noopener">Abrir PDF</a>
-              <a class="btn-sm" href="assets/pdf/PorqueSembramos.pdf" download>Descargar</a>
+              <div class="article-meta">HUCOM · Huerta experimental</div>
+              <div class="article-title">Porque sembramos lo que sembramos</div>
+              <p class="article-desc">
+                Sinopsis: por qué elegimos qué sembrar en la huerta experimental del Comcosur (HUCOM).
+              </p>
+              <div class="article-actions">
+                <a class="primary" href="assets/pdf/PorqueSembramos.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+              </div>
             </div>
           </article>
 
           <!-- 2 -->
-          <article class="article">
-            <img class="article-cover" src="assets/img/pachamama.jpg" alt="Portada Naturaleza" />
+          <article class="card article-card">
+            <img class="article-cover" src="assets/img/portada3.jpg" alt="La naturaleza como objeto a la naturaleza como sujeto" />
             <div class="article-body">
-              <div class="article-k">Naturaleza</div>
-              <h3>La naturaleza como objeto a la naturaleza como sujeto</h3>
-              <p>Ensayo sobre el cambio conceptual: de “objeto” a “sujeto” en nuestra relación con la naturaleza.</p>
-            </div>
-            <div class="actions">
-              <a class="btn-sm primary" href="assets/pdf/LANATURALEZADEOBJETOASUJETO.pdf" target="_blank" rel="noopener">Abrir PDF</a>
-              <a class="btn-sm" href="assets/pdf/LANATURALEZADEOBJETOASUJETO.pdf" download>Descargar</a>
+              <div class="article-meta">Ambiente y filosofía</div>
+              <div class="article-title">La naturaleza como objeto a la naturaleza como sujeto</div>
+              <p class="article-desc">
+                Sinopsis: cambio conceptual para pensar la naturaleza desde una relación de reconocimiento y cuidado.
+              </p>
+              <div class="article-actions">
+                <a class="primary" href="assets/pdf/LANATURALEZADEOBJETOASUJETO.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+              </div>
             </div>
           </article>
 
           <!-- 3 -->
-          <article class="article">
-            <img class="article-cover" src="assets/img/portada3.jpg" alt="Portada Kusch" />
+          <article class="card article-card">
+            <img class="article-cover" src="assets/img/pachamama.jpg" alt="Qué es el Ser Alguien - Rodolfo Kusch" />
             <div class="article-body">
-              <div class="article-k">Aportes · Kusch</div>
-              <h3>Qué es el Ser Alguien (Rodolfo Kusch)</h3>
-              <p>Lectura guía: ideas centrales sobre identidad, territorio y pensamiento latinoamericano.</p>
-            </div>
-            <div class="actions">
-              <!-- URL-encoding para evitar fallos -->
-              <a class="btn-sm primary"
-                 href="assets/pdf/QuéeselSerAlguienConceptosdeRODOLFOKUSH.pdf"
-                 target="_blank" rel="noopener">Abrir PDF</a>
-              <a class="btn-sm"
-                 href="assets/pdf/QuéeselSerAlguienConceptosdeRODOLFOKUSH.pdf"
-                 download>Descargar</a>
+              <div class="article-meta">Aportes conceptuales</div>
+              <div class="article-title">Qué es el Ser Alguien (Rodolfo Kusch)</div>
+              <p class="article-desc">
+                Sinopsis: ideas clave sobre identidad y territorio para pensar nuestra relación con el mundo.
+              </p>
+              <div class="article-actions">
+                <a class="primary" href="assets/pdf/QueeselSerAlguienConceptosdeRODOLFOKUSH.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+              </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
     <div class="footer">
-      COMCOSUR — Asociación Civil Comunidades Pampa Costera del Sur
+      COMCOSUR – Asociación Civil Comunidades Pampa Costera del Sur<br/>
+      10 años de trayectoria en conservación y territorio
     </div>
   </main>
+
 </body>
 </html>
