@@ -534,6 +534,7 @@ img{ max-width:100%; height:auto; display:block; }
 .home-art-card{
   position:relative;
   width: min(100%, 440px);
+  min-height: 360px;
   padding: 28px 26px 18px;
   border-radius: 34px;
   background:
@@ -546,8 +547,20 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 .home-art-main{
-  width: min(100%, 320px);
+  position:absolute;
+  inset: 28px 26px 18px;
+  width: calc(100% - 52px);
+  height: calc(100% - 46px);
   margin: 0 auto;
+  object-fit: contain;
+  opacity: 0;
+  transform: scale(.98);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.home-art-main.is-active{
+  opacity: 1;
+  transform: scale(1);
 }
 
 .home-band{
@@ -870,7 +883,6 @@ img{ max-width:100%; height:auto; display:block; }
   .home-title{ font-size: clamp(52px, 9vw, 86px); }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
-  .home-art-main{ width: min(100%, 260px); }
   .home-band-title{ font-size: 34px; }
 }
 @media (max-width: 860px){
@@ -907,8 +919,8 @@ img{ max-width:100%; height:auto; display:block; }
   .home-lead{ font-size: 18px; }
   .home-stats{ grid-template-columns: 1fr; }
   .home-visual{ min-height: 380px; }
-  .home-art-card{ padding: 18px 16px 14px; border-radius: 24px; }
-  .home-art-main{ width: min(100%, 220px); }
+  .home-art-card{ min-height: 300px; padding: 18px 16px 14px; border-radius: 24px; }
+  .home-art-main{ inset: 18px 16px 14px; width: calc(100% - 32px); height: calc(100% - 32px); }
   .home-band,
   .home-links-card{ padding: 22px 20px; }
   .home-link-tile{ min-height: auto; }
