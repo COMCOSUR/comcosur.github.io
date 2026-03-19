@@ -510,7 +510,7 @@ img{ max-width:100%; height:auto; display:block; }
   display:grid;
   align-content:center;
   justify-items:end;
-  gap: 18px;
+  gap: 10px;
 }
 
 .home-orb{
@@ -539,6 +539,7 @@ img{ max-width:100%; height:auto; display:block; }
   width: min(100%, 320px);
   display:grid;
   place-items:center;
+  justify-self:center;
 }
 
 .home-logo-main{
@@ -549,8 +550,8 @@ img{ max-width:100%; height:auto; display:block; }
 
 .home-photo-card{
   position:relative;
-  width: min(100%, 440px);
-  min-height: 280px;
+  width: min(100%, 300px);
+  min-height: 190px;
   padding: 18px;
   border-radius: 30px;
   background:
@@ -901,7 +902,7 @@ img{ max-width:100%; height:auto; display:block; }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
   .home-logo-main{ width: min(100%, 210px); }
-  .home-photo-card{ min-height: 240px; }
+  .home-photo-card{ width: min(100%, 260px); min-height: 180px; }
   .home-band-title{ font-size: 34px; }
 }
 @media (max-width: 860px){
