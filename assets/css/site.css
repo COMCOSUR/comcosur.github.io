@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Lora:wght@500;600;700&display=swap');
 
 :root{
-  --bg1:#17452f;
-  --bg2:#2a6b4b;
+  --bg1:#133d2a;
+  --bg2:#225f42;
 
-  --panel:#1d5237;
-  --panel2:#32795a;
+  --panel:#184932;
+  --panel2:#2a6c4c;
 
   --mint:#49a874;
   --brand-font:"Lora", Georgia, "Times New Roman", serif;
@@ -25,9 +25,9 @@ body{
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(520px 260px at 12% 14%, rgba(152, 224, 182, .16), transparent 68%),
-    radial-gradient(620px 320px at 84% 18%, rgba(176, 233, 199, .14), transparent 72%),
-    radial-gradient(540px 280px at 50% 78%, rgba(122, 194, 151, .12), transparent 70%),
+    radial-gradient(520px 260px at 12% 14%, rgba(142, 214, 172, .14), transparent 68%),
+    radial-gradient(620px 320px at 84% 18%, rgba(160, 220, 186, .12), transparent 72%),
+    radial-gradient(540px 280px at 50% 78%, rgba(110, 182, 141, .10), transparent 70%),
     linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0)),
     linear-gradient(180deg, var(--bg2), var(--bg1));
 }
@@ -124,7 +124,7 @@ img{ max-width:100%; height:auto; display:block; }
   padding: 34px 0;
 }
 .card{
-  background: linear-gradient(180deg, rgba(26,78,54,.86), rgba(21,63,44,.9));
+  background: linear-gradient(180deg, rgba(22,69,48,.86), rgba(17,54,38,.9));
   border: 1px solid rgba(255,255,255,.10);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -634,7 +634,7 @@ img{ max-width:100%; height:auto; display:block; }
 .home-panel-accent{
   background:
     radial-gradient(220px 120px at top right, rgba(168,136,95,.16), transparent 72%),
-    linear-gradient(180deg, rgba(27,79,55,.88), rgba(20,60,42,.92));
+    linear-gradient(180deg, rgba(23,70,49,.88), rgba(17,52,36,.92));
 }
 
 .home-panel-kicker{
@@ -704,7 +704,7 @@ img{ max-width:100%; height:auto; display:block; }
   border-radius: 30px;
   background:
     radial-gradient(220px 140px at right top, rgba(98,156,164,.14), transparent 72%),
-    linear-gradient(180deg, rgba(25,72,51,.92), rgba(18,54,38,.96));
+    linear-gradient(180deg, rgba(21,64,45,.92), rgba(15,46,33,.96));
   border: 1px solid rgba(255,255,255,.10);
 }
 
@@ -852,7 +852,7 @@ img{ max-width:100%; height:auto; display:block; }
   font-size: 12px;
   background:
     radial-gradient(240px 120px at 50% 0%, rgba(91,179,129,.22), transparent 72%),
-    linear-gradient(180deg, rgba(21,61,42,.92), rgba(15,45,31,.98));
+    linear-gradient(180deg, rgba(18,53,37,.92), rgba(12,38,26,.98));
   border-top: 1px solid rgba(255,255,255,.07);
 }
 
