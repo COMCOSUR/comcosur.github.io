@@ -60,11 +60,14 @@
           <div class="home-orb home-orb-one"></div>
           <div class="home-orb home-orb-two"></div>
 
-          <div class="home-art-card" id="home-slideshow">
-            <img class="home-art-main is-active" src="assets/img/balcom-nuevo.png.png" alt="Imagen BALCOM" />
-            <img class="home-art-main" src="assets/img/pachamama.jpg" alt="Imagen de naturaleza" />
-            <img class="home-art-main" src="assets/img/portada1.jpeg" alt="Imagen de archivo" />
-            <img class="home-art-main" src="assets/img/portada3.jpg" alt="Imagen de archivo" />
+          <div class="home-logo-card">
+            <img class="home-logo-main" src="assets/img/balcom-nuevo.png.png" alt="Logo BALCOM" />
+          </div>
+
+          <div class="home-photo-card" id="home-slideshow">
+            <img class="home-photo-main is-active" src="assets/img/pachamama.jpg" alt="Imagen de naturaleza" />
+            <img class="home-photo-main" src="assets/img/portada1.jpeg" alt="Imagen de archivo" />
+            <img class="home-photo-main" src="assets/img/portada3.jpg" alt="Imagen de archivo" />
           </div>
         </div>
       </div>
@@ -165,7 +168,7 @@
       const slideshow = document.getElementById('home-slideshow');
       if (!slideshow) return;
 
-      const slides = Array.from(slideshow.querySelectorAll('.home-art-main'));
+      const slides = Array.from(slideshow.querySelectorAll('.home-photo-main'));
       if (slides.length < 2) return;
 
       let currentIndex = 0;

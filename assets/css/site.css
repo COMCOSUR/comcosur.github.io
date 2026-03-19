@@ -508,7 +508,9 @@ img{ max-width:100%; height:auto; display:block; }
   position:relative;
   min-height: 520px;
   display:grid;
-  place-items:center end;
+  align-content:center;
+  justify-items:end;
+  gap: 18px;
 }
 
 .home-orb{
@@ -531,12 +533,26 @@ img{ max-width:100%; height:auto; display:block; }
   background: rgba(133,113,57,.14);
 }
 
-.home-art-card{
+.home-logo-card{
+  position:relative;
+  z-index: 1;
+  width: min(100%, 320px);
+  display:grid;
+  place-items:center;
+}
+
+.home-logo-main{
+  width: min(100%, 240px);
+  height: auto;
+  object-fit: contain;
+}
+
+.home-photo-card{
   position:relative;
   width: min(100%, 440px);
-  min-height: 360px;
-  padding: 28px 26px 18px;
-  border-radius: 34px;
+  min-height: 280px;
+  padding: 18px;
+  border-radius: 30px;
   background:
     radial-gradient(260px 160px at 50% 0%, rgba(255,255,255,.08), transparent 70%),
     linear-gradient(180deg, rgba(11,46,31,.92), rgba(8,29,20,.96));
@@ -546,19 +562,20 @@ img{ max-width:100%; height:auto; display:block; }
     inset 0 1px 0 rgba(255,255,255,.04);
 }
 
-.home-art-main{
+.home-photo-main{
   position:absolute;
-  inset: 28px 26px 18px;
-  width: calc(100% - 52px);
-  height: calc(100% - 46px);
+  inset: 18px;
+  width: calc(100% - 36px);
+  height: calc(100% - 36px);
   margin: 0 auto;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 22px;
   opacity: 0;
   transform: scale(.98);
   transition: opacity .8s ease, transform .8s ease;
 }
 
-.home-art-main.is-active{
+.home-photo-main.is-active{
   opacity: 1;
   transform: scale(1);
 }
@@ -883,6 +900,8 @@ img{ max-width:100%; height:auto; display:block; }
   .home-title{ font-size: clamp(52px, 9vw, 86px); }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
+  .home-logo-main{ width: min(100%, 210px); }
+  .home-photo-card{ min-height: 240px; }
   .home-band-title{ font-size: 34px; }
 }
 @media (max-width: 860px){
@@ -899,7 +918,10 @@ img{ max-width:100%; height:auto; display:block; }
   .home-actions{
     justify-content:center;
   }
-  .home-visual{ min-height: 460px; }
+  .home-visual{
+    min-height: 460px;
+    justify-items:center;
+  }
   .home-links-head{ align-items:flex-start; flex-direction:column; }
   .hero-title{ font-size: 52px; }
 }
@@ -919,8 +941,9 @@ img{ max-width:100%; height:auto; display:block; }
   .home-lead{ font-size: 18px; }
   .home-stats{ grid-template-columns: 1fr; }
   .home-visual{ min-height: 380px; }
-  .home-art-card{ min-height: 300px; padding: 18px 16px 14px; border-radius: 24px; }
-  .home-art-main{ inset: 18px 16px 14px; width: calc(100% - 32px); height: calc(100% - 32px); }
+  .home-logo-main{ width: min(100%, 180px); }
+  .home-photo-card{ min-height: 220px; padding: 14px; border-radius: 24px; }
+  .home-photo-main{ inset: 14px; width: calc(100% - 28px); height: calc(100% - 28px); }
   .home-band,
   .home-links-card{ padding: 22px 20px; }
   .home-link-tile{ min-height: auto; }
