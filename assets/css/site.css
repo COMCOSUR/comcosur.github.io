@@ -250,11 +250,17 @@ img{ max-width:100%; height:auto; display:block; }
   --tone-rgb: 47,143,91;
   --tone-soft: rgba(var(--tone-rgb), .18);
   --tone-border: rgba(var(--tone-rgb), .34);
-  --tone-glow: rgba(var(--tone-rgb), .10);
+  --tone-glow: rgba(var(--tone-rgb), .12);
+  --tone-panel-top: rgba(var(--tone-rgb), .16);
+  --tone-panel-bottom: rgba(var(--tone-rgb), .08);
   background:
-    radial-gradient(140px 90px at top right, var(--tone-glow), transparent 70%),
+    radial-gradient(180px 120px at top right, var(--tone-glow), transparent 72%),
+    linear-gradient(180deg, var(--tone-panel-top), rgba(10,42,28,.90) 38%, rgba(9,30,20,.94)),
     linear-gradient(180deg, rgba(10,42,28,.88), rgba(9,30,20,.92));
-  border-color: rgba(255,255,255,.08);
+  border-color: rgba(var(--tone-rgb), .22);
+  box-shadow:
+    0 12px 40px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.03);
 }
 
 .content-card .p{
