@@ -508,7 +508,7 @@ img{ max-width:100%; height:auto; display:block; }
   position:relative;
   min-height: 520px;
   display:grid;
-  place-items:center;
+  place-items:center end;
 }
 
 .home-orb{
