@@ -644,6 +644,22 @@ img{ max-width:100%; height:auto; display:block; }
   margin: 0 auto;
 }
 
+.home-panel-media-comcosur{
+  min-height: 170px;
+  display:grid;
+  place-items:center;
+  background: transparent;
+  border: 0;
+  padding: 6px 0 0;
+}
+
+.home-panel-media-comcosur img{
+  width: min(100%, 150px);
+  border-radius: 22px;
+  background: rgba(255,255,255,.05);
+  padding: 10px;
+}
+
 .home-links-card{
   padding: 28px 30px;
   border-radius: 30px;
