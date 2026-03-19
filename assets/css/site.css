@@ -447,12 +447,13 @@ img{ max-width:100%; height:auto; display:block; }
 .home-stat{
   position:relative;
   overflow:hidden;
+  --stat-rgb: 56,135,94;
   padding: 18px 20px 20px;
   border-radius: 24px;
   background:
-    radial-gradient(120px 80px at top right, rgba(255,255,255,.08), transparent 72%),
-    linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
-  border: 1px solid rgba(255,255,255,.10);
+    radial-gradient(120px 80px at top right, rgba(var(--stat-rgb), .16), transparent 72%),
+    linear-gradient(180deg, rgba(var(--stat-rgb), .16), rgba(255,255,255,.025));
+  border: 1px solid rgba(var(--stat-rgb), .24);
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,.04),
     0 14px 28px rgba(0,0,0,.14);
@@ -464,7 +465,19 @@ img{ max-width:100%; height:auto; display:block; }
   inset: 0 auto auto 20px;
   width: 34px;
   height: 2px;
-  background: rgba(183,214,198,.72);
+  background: rgba(var(--stat-rgb), .78);
+}
+
+.home-stat:nth-child(1){
+  --stat-rgb: 70,140,94;
+}
+
+.home-stat:nth-child(2){
+  --stat-rgb: 60,120,124;
+}
+
+.home-stat:nth-child(3){
+  --stat-rgb: 126,112,64;
 }
 
 .home-stat strong{
