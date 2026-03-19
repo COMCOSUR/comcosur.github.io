@@ -508,43 +508,6 @@ img{ max-width:100%; height:auto; display:block; }
   margin: 0 auto;
 }
 
-.home-mini-card{
-  position:absolute;
-  max-width: 220px;
-  padding: 16px 18px;
-  border-radius: 20px;
-  background: rgba(6,25,17,.78);
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: 0 16px 30px rgba(0,0,0,.22);
-  backdrop-filter: blur(10px);
-}
-
-.home-mini-card strong{
-  display:block;
-  font-size: 16px;
-  line-height: 1.35;
-}
-
-.home-mini-label{
-  display:block;
-  margin-bottom: 6px;
-  color: rgba(183,214,198,.78);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-}
-
-.home-mini-card-top{
-  top: 62px;
-  right: -12px;
-}
-
-.home-mini-card-bottom{
-  bottom: 48px;
-  left: -8px;
-}
-
 .home-band{
   display:grid;
   grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
@@ -844,9 +807,6 @@ img{ max-width:100%; height:auto; display:block; }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
   .home-art-main{ width: min(100%, 260px); }
-  .home-mini-card{ max-width: 190px; }
-  .home-mini-card-top{ right: 8px; }
-  .home-mini-card-bottom{ left: 8px; }
   .home-band-title{ font-size: 34px; }
 }
 @media (max-width: 860px){
@@ -878,11 +838,6 @@ img{ max-width:100%; height:auto; display:block; }
   .home-visual{ min-height: 380px; }
   .home-art-card{ padding: 18px 16px 14px; border-radius: 24px; }
   .home-art-main{ width: min(100%, 220px); }
-  .home-mini-card{
-    position: static;
-    max-width: none;
-    margin-top: 12px;
-  }
   .home-band,
   .home-links-card{ padding: 22px 20px; }
   .home-link-tile{ min-height: auto; }
