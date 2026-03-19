@@ -533,16 +533,16 @@ img{ max-width:100%; height:auto; display:block; }
 
 .home-logo-card{
   position:absolute;
-  top: 118px;
-  right: 126px;
+  top: 98px;
+  right: 120px;
   z-index: 1;
-  width: min(100%, 320px);
+  width: min(100%, 420px);
   display:grid;
   place-items:center;
 }
 
 .home-logo-main{
-  width: min(100%, 360px);
+  width: min(100%, 410px);
   height: auto;
   object-fit: contain;
 }
@@ -902,8 +902,8 @@ img{ max-width:100%; height:auto; display:block; }
   .home-title{ font-size: clamp(52px, 9vw, 86px); }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
-  .home-logo-main{ width: min(100%, 310px); }
-  .home-logo-card{ top: 124px; right: 92px; }
+  .home-logo-main{ width: min(100%, 350px); }
+  .home-logo-card{ top: 108px; right: 84px; width: min(100%, 360px); }
   .home-photo-card{ right: -34px; top: -8px; width: min(100%, 190px); min-height: 136px; }
   .home-band-title{ font-size: 34px; }
 }
