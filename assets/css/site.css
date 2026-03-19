@@ -8,6 +8,7 @@
   --panel2:#18553a;
 
   --mint:#49a874;
+  --brand-font:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 
   --text:#f1fbf5;
   --muted:#b7d6c6;
@@ -65,7 +66,7 @@ img{ max-width:100%; height:auto; display:block; }
   border: 1px solid rgba(255,255,255,.08);
 }
 .brand-title{
-  font-family:"Inter", system-ui, sans-serif;
+  font-family:var(--brand-font);
   letter-spacing:.02em;
   font-weight:700;
   font-size: 15px;
@@ -126,16 +127,18 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 .h1{
-  font-family:"Cinzel", serif;
-  letter-spacing: 1px;
+  font-family:var(--brand-font);
+  letter-spacing: .01em;
   font-size: 44px;
   margin:0 0 10px 0;
+  font-weight: 800;
 }
 .h2{
-  font-family:"Cinzel", serif;
-  letter-spacing: .6px;
+  font-family:var(--brand-font);
+  letter-spacing: .01em;
   font-size: 30px;
   margin:0 0 12px 0;
+  font-weight: 800;
 }
 .p{
   color: rgba(241,251,245,.92);
@@ -170,10 +173,11 @@ img{ max-width:100%; height:auto; display:block; }
   margin-bottom: 8px;
 }
 .hero-title{
-  font-family:"Cinzel", serif;
+  font-family:var(--brand-font);
   font-size: 64px;
   margin: 0 0 8px 0;
-  letter-spacing: 2px;
+  letter-spacing: .01em;
+  font-weight: 800;
 }
 .sub{
   color: rgba(241,251,245,.9);
@@ -384,10 +388,11 @@ img{ max-width:100%; height:auto; display:block; }
 
 .home-title{
   margin: 0 0 12px;
-  font-family:"Cinzel", serif;
+  font-family:var(--brand-font);
   font-size: clamp(58px, 12vw, 112px);
   line-height: .96;
-  letter-spacing: .02em;
+  letter-spacing: .01em;
+  font-weight: 800;
 }
 
 .home-lead{
@@ -564,9 +569,10 @@ img{ max-width:100%; height:auto; display:block; }
 
 .home-band-title{
   margin:0;
-  font-family:"Cinzel", serif;
+  font-family:var(--brand-font);
   font-size: clamp(28px, 4vw, 42px);
   line-height: 1.12;
+  font-weight: 800;
 }
 
 .home-band-text{
@@ -686,9 +692,10 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 .home-link-tile strong{
-  font-family:"Cinzel", serif;
+  font-family:var(--brand-font);
   font-size: 24px;
   line-height: 1.1;
+  font-weight: 800;
 }
 
 .home-link-tile span:last-child{
