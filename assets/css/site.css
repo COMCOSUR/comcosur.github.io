@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root{
   --bg1:#0d2b1d;
@@ -144,9 +144,10 @@ img{ max-width:100%; height:auto; display:block; }
 .p{
   font-family: var(--body-elegant);
   color: rgba(241,251,245,.92);
-  line-height: 1.6;
+  line-height: 1.68;
   margin: 0;
-  font-size: 1.16rem;
+  font-size: 1.26rem;
+  font-weight: 500;
 }
 .hr{
   height:1px;
@@ -187,8 +188,9 @@ img{ max-width:100%; height:auto; display:block; }
   color: rgba(241,251,245,.9);
   max-width: 720px;
   margin: 0 auto 18px auto;
-  line-height: 1.55;
-  font-size: 1.18rem;
+  line-height: 1.62;
+  font-size: 1.34rem;
+  font-weight: 500;
 }
 .btn{
   display:inline-block;
@@ -298,8 +300,9 @@ img{ max-width:100%; height:auto; display:block; }
   font-family: var(--body-elegant);
   max-width: 860px;
   color: rgba(241,251,245,.84);
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 24px;
+  line-height: 1.62;
+  font-weight: 500;
 }
 
 .page-intro{
@@ -350,8 +353,9 @@ img{ max-width:100%; height:auto; display:block; }
   font-family: var(--body-elegant);
   max-width: 860px;
   color: rgba(241,251,245,.84);
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 24px;
+  line-height: 1.62;
+  font-weight: 500;
 }
 
 .page-intro-home .page-intro-text{
@@ -407,8 +411,9 @@ img{ max-width:100%; height:auto; display:block; }
   max-width: 640px;
   margin: 0;
   color: rgba(241,251,245,.88);
-  font-size: clamp(20px, 2.3vw, 28px);
-  line-height: 1.45;
+  font-size: clamp(24px, 2.7vw, 34px);
+  line-height: 1.42;
+  font-weight: 500;
 }
 
 .home-actions{
@@ -537,8 +542,9 @@ img{ max-width:100%; height:auto; display:block; }
   font-family: var(--body-elegant);
   margin:0;
   color: rgba(241,251,245,.84);
-  font-size: 19px;
-  line-height: 1.65;
+  font-size: 22px;
+  line-height: 1.62;
+  font-weight: 500;
 }
 
 .home-grid{
@@ -660,8 +666,9 @@ img{ max-width:100%; height:auto; display:block; }
 .home-link-tile span:last-child{
   font-family: var(--body-elegant);
   color: rgba(183,214,198,.84);
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 17px;
+  line-height: 1.58;
+  font-weight: 500;
 }
 
 .content-card{
@@ -793,8 +800,9 @@ img{ max-width:100%; height:auto; display:block; }
   max-width: 640px;
   margin: 0 auto;
   color: rgba(183,214,198,.82);
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.62;
+  font-weight: 500;
 }
 
 /* Responsive */
@@ -840,6 +848,6 @@ img{ max-width:100%; height:auto; display:block; }
   .home-links-card{ padding: 22px 20px; }
   .home-link-tile{ min-height: auto; }
   .content-intro-text{ font-size: 17px; }
-  .page-intro-text{ font-size: 17px; }
+  .page-intro-text{ font-size: 18px; }
   .hero-title{ font-size: 44px; }
 }
