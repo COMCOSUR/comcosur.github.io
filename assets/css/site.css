@@ -533,8 +533,8 @@ img{ max-width:100%; height:auto; display:block; }
 
 .home-logo-card{
   position:absolute;
-  top: 20px;
-  right: 118px;
+  top: 118px;
+  right: 126px;
   z-index: 1;
   width: min(100%, 320px);
   display:grid;
@@ -549,10 +549,10 @@ img{ max-width:100%; height:auto; display:block; }
 
 .home-photo-card{
   position:absolute;
-  right: -138px;
-  top: 118px;
-  width: min(100%, 250px);
-  min-height: 190px;
+  right: -116px;
+  top: 8px;
+  width: min(100%, 220px);
+  min-height: 150px;
   padding: 18px;
   border-radius: 30px;
   background:
@@ -903,8 +903,8 @@ img{ max-width:100%; height:auto; display:block; }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
   .home-logo-main{ width: min(100%, 280px); }
-  .home-logo-card{ right: 78px; }
-  .home-photo-card{ right: -48px; top: 138px; width: min(100%, 210px); min-height: 150px; }
+  .home-logo-card{ top: 124px; right: 92px; }
+  .home-photo-card{ right: -34px; top: 6px; width: min(100%, 190px); min-height: 136px; }
   .home-band-title{ font-size: 34px; }
 }
 @media (max-width: 860px){
