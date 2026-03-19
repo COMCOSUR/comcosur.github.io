@@ -202,7 +202,9 @@ img{ max-width:100%; height:auto; display:block; }
   border-radius: 999px;
   background: rgba(47,143,91,.25);
   border: 1px solid rgba(47,143,91,.45);
-  font-weight: 700;
+  font-family: var(--brand-font);
+  font-weight: 600;
+  letter-spacing: .01em;
 }
 .btn:hover{ background: rgba(47,143,91,.32); }
 
