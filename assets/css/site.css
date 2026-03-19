@@ -507,10 +507,7 @@ img{ max-width:100%; height:auto; display:block; }
 .home-visual{
   position:relative;
   min-height: 520px;
-  display:grid;
-  align-content:center;
-  justify-items:end;
-  gap: 10px;
+  display:block;
 }
 
 .home-orb{
@@ -534,12 +531,13 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 .home-logo-card{
-  position:relative;
+  position:absolute;
+  top: 20px;
+  right: 84px;
   z-index: 1;
   width: min(100%, 320px);
   display:grid;
   place-items:center;
-  justify-self:center;
 }
 
 .home-logo-main{
@@ -549,13 +547,13 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 .home-photo-card{
-  position:relative;
+  position:absolute;
+  right: 10px;
+  top: 310px;
   width: min(100%, 300px);
   min-height: 190px;
   padding: 18px;
   border-radius: 30px;
-  justify-self:end;
-  margin-right: 18px;
   background:
     radial-gradient(260px 160px at 50% 0%, rgba(255,255,255,.08), transparent 70%),
     linear-gradient(180deg, rgba(11,46,31,.92), rgba(8,29,20,.96));
@@ -904,7 +902,8 @@ img{ max-width:100%; height:auto; display:block; }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
   .home-logo-main{ width: min(100%, 280px); }
-  .home-photo-card{ width: min(100%, 260px); min-height: 180px; }
+  .home-logo-card{ right: 44px; }
+  .home-photo-card{ right: 0; top: 292px; width: min(100%, 260px); min-height: 180px; }
   .home-band-title{ font-size: 34px; }
 }
 @media (max-width: 860px){
@@ -923,10 +922,13 @@ img{ max-width:100%; height:auto; display:block; }
   }
   .home-visual{
     min-height: 460px;
-    justify-items:center;
   }
+  .home-logo-card,
   .home-photo-card{
-    margin-right: 0;
+    position:relative;
+    top:auto;
+    right:auto;
+    margin: 0 auto;
   }
   .home-links-head{ align-items:flex-start; flex-direction:column; }
   .hero-title{ font-size: 52px; }
