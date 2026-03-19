@@ -549,7 +549,7 @@ img{ max-width:100%; height:auto; display:block; }
 
 .home-photo-card{
   position:absolute;
-  right: -116px;
+  right: -190px;
   top: -18px;
   width: min(100%, 220px);
   min-height: 150px;
@@ -904,7 +904,7 @@ img{ max-width:100%; height:auto; display:block; }
   .home-visual{ min-height: 440px; }
   .home-logo-main{ width: min(100%, 350px); }
   .home-logo-card{ top: 88px; right: 84px; width: min(100%, 360px); }
-  .home-photo-card{ right: -34px; top: -8px; width: min(100%, 190px); min-height: 136px; }
+  .home-photo-card{ right: -88px; top: -8px; width: min(100%, 190px); min-height: 136px; }
   .home-band-title{ font-size: 34px; }
 }
 @media (max-width: 860px){
