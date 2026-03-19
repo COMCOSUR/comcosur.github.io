@@ -534,7 +534,7 @@ img{ max-width:100%; height:auto; display:block; }
 .home-logo-card{
   position:absolute;
   top: 72px;
-  right: 120px;
+  right: 92px;
   z-index: 1;
   width: min(100%, 420px);
   display:grid;
@@ -904,7 +904,7 @@ img{ max-width:100%; height:auto; display:block; }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
   .home-logo-main{ width: min(100%, 350px); }
-  .home-logo-card{ top: 88px; right: 84px; width: min(100%, 360px); }
+  .home-logo-card{ top: 88px; right: 64px; width: min(100%, 360px); }
   .home-photo-card{ right: -210px; top: 2px; width: min(100%, 230px); min-height: 156px; }
   .home-band-title{ font-size: 34px; }
 }
