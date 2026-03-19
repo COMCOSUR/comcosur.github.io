@@ -251,6 +251,10 @@ img{ max-width:100%; height:auto; display:block; }
   flex:1;
 }
 
+.content-card .btn{
+  align-self:flex-start;
+}
+
 .content-placeholder{
   min-height: 150px;
   display:grid;
@@ -270,6 +274,11 @@ img{ max-width:100%; height:auto; display:block; }
   font-weight: 700;
   letter-spacing: .12em;
   text-transform: uppercase;
+}
+
+.topic-shell{
+  display:grid;
+  gap:18px;
 }
 
 /* Footer */
