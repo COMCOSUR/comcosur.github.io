@@ -302,13 +302,10 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 .page-intro-logo{
-  width: 108px;
-  height: 108px;
-  margin: 0 auto 14px;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 18px;
   object-fit: contain;
-  border-radius: 18px;
-  background: rgba(255,255,255,.06);
-  padding: 10px;
 }
 
 .page-intro-kicker{
