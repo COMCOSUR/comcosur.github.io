@@ -277,6 +277,64 @@ img{ max-width:100%; height:auto; display:block; }
   line-height: 1.6;
 }
 
+.page-intro{
+  position:relative;
+  margin-bottom: 22px;
+  padding: 10px 0 18px;
+}
+
+.page-intro::after{
+  content:"";
+  display:block;
+  width: 120px;
+  height: 1px;
+  margin-top: 18px;
+  background: linear-gradient(90deg, rgba(196,226,205,.7), rgba(196,226,205,0));
+}
+
+.page-intro-home{
+  text-align:center;
+  padding: 22px 0 10px;
+}
+
+.page-intro-home::after{
+  margin: 18px auto 0;
+}
+
+.page-intro-logo{
+  width: 108px;
+  height: 108px;
+  margin: 0 auto 14px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: rgba(255,255,255,.06);
+  padding: 10px;
+}
+
+.page-intro-kicker{
+  margin-bottom: 10px;
+  color: rgba(183,214,198,.82);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+}
+
+.page-intro-title{
+  margin-bottom: 12px;
+}
+
+.page-intro-text{
+  max-width: 860px;
+  color: rgba(241,251,245,.84);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.page-intro-home .page-intro-text{
+  margin: 0 auto 18px;
+}
+
 .content-card{
   display:flex;
   flex-direction:column;
@@ -378,5 +436,6 @@ img{ max-width:100%; height:auto; display:block; }
   .article-grid{ grid-template-columns: 1fr; }
   .content-grid{ grid-template-columns: 1fr; }
   .content-intro-text{ font-size: 17px; }
+  .page-intro-text{ font-size: 17px; }
   .hero-title{ font-size: 44px; }
 }
