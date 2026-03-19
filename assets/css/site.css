@@ -542,7 +542,7 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 .home-logo-main{
-  width: min(100%, 320px);
+  width: min(100%, 360px);
   height: auto;
   object-fit: contain;
 }
@@ -550,7 +550,7 @@ img{ max-width:100%; height:auto; display:block; }
 .home-photo-card{
   position:absolute;
   right: -116px;
-  top: 8px;
+  top: -18px;
   width: min(100%, 220px);
   min-height: 150px;
   padding: 18px;
@@ -902,9 +902,9 @@ img{ max-width:100%; height:auto; display:block; }
   .home-title{ font-size: clamp(52px, 9vw, 86px); }
   .home-lead{ font-size: 22px; }
   .home-visual{ min-height: 440px; }
-  .home-logo-main{ width: min(100%, 280px); }
+  .home-logo-main{ width: min(100%, 310px); }
   .home-logo-card{ top: 124px; right: 92px; }
-  .home-photo-card{ right: -34px; top: 6px; width: min(100%, 190px); min-height: 136px; }
+  .home-photo-card{ right: -34px; top: -8px; width: min(100%, 190px); min-height: 136px; }
   .home-band-title{ font-size: 34px; }
 }
 @media (max-width: 860px){
