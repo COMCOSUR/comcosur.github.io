@@ -600,6 +600,13 @@ body.page-ready .topic-shell > *:nth-child(6){
   transform: translateY(0);
 }
 
+.home-phrase-rotator span:only-child{
+  position: static;
+  display: block;
+  opacity: 1;
+  transform: none;
+}
+
 .home-lead{
   font-family: var(--body-elegant);
   max-width: 640px;

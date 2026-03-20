@@ -36,9 +36,7 @@
           <h1 class="home-title">BALCOM</h1>
           <div class="home-hero-line" aria-hidden="true"><span></span></div>
           <div class="home-phrase-rotator" id="home-phrase-rotator" aria-label="Frase destacada">
-            <span class="is-active">Esta es una frase</span>
-            <span>Esta es una frase</span>
-            <span>Esta es una frase</span>
+            <span class="is-active">Nuestra biblioteca, a la que mencionaremos como BALCOM (Biblioteca Latino-Americana COMCOSUR), referencia en su nombre, además de las iniciales, el valioso posicionamiento de ser originarios de América y de sentirnos desde un balcón: visuales largas, panorámicas, inclusivas, totalizadoras y holísticas de la realidad, orientadas al conocimiento de las complejas variables que hacen a nuestra naturaleza y humanidad.</span>
           </div>
 
           <div class="home-actions">
@@ -260,21 +258,6 @@
         }, 3200);
       })();
 
-      (() => {
-        const rotator = document.getElementById('home-phrase-rotator');
-        if (!rotator) return;
-
-        const phrases = Array.from(rotator.querySelectorAll('span'));
-        if (phrases.length < 2) return;
-
-        let currentIndex = 0;
-
-        window.setInterval(() => {
-          phrases[currentIndex].classList.remove('is-active');
-          currentIndex = (currentIndex + 1) % phrases.length;
-          phrases[currentIndex].classList.add('is-active');
-        }, 2600);
-      })();
   </script>
   <script src="assets/js/site.js"></script>
 
