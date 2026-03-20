@@ -1433,7 +1433,20 @@ body.page-ready .topic-shell > *:nth-child(6){
   .home-kicker::before{ width: 24px; }
   .home-title{ font-size: 44px; margin-bottom: 16px; }
   .home-hero-line{ margin-bottom: 14px; width: min(180px, 58vw); }
-  .home-phrase-rotator{ min-height: 30px; font-size: 17px; margin-bottom: 14px; }
+  .home-phrase-rotator{
+    min-height: auto;
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 16px;
+  }
+  .home-phrase-rotator span{
+    position: static;
+    display: none;
+    transform: none;
+  }
+  .home-phrase-rotator span.is-active{
+    display: block;
+  }
   .home-actions{ gap: 10px; }
   .btn{ width: 100%; justify-content: center; }
   .home-stats{ gap: 10px; margin-top: 18px; }
