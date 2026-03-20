@@ -1403,3 +1403,110 @@ body.page-ready .topic-shell > *:nth-child(6){
   .page-intro-text{ font-size: 18px; }
   .hero-title{ font-size: 44px; }
 }
+
+@media (max-width: 480px){
+  .container{ width:min(100%, 90vw); }
+  .section{ padding: 24px 0; }
+  .nav-inner{ gap: 12px; }
+  .brand{ min-width: 0; }
+  .brand img{ width: 40px; height: 40px; }
+  .brand-title{ font-size: 14px; }
+  .brand-subtitle{ font-size: 12px; }
+  .menu{
+    gap: 8px;
+    padding: 8px;
+  }
+  .menu a{
+    flex: 1 1 calc(50% - 8px);
+    min-width: 0;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .page-intro{ margin-bottom: 18px; padding-bottom: 14px; }
+  .page-intro-kicker{ font-size: 10px; letter-spacing: .24em; }
+  .page-intro-title{ margin-bottom: 10px; }
+  .page-intro-text{ font-size: 17px; line-height: 1.52; }
+
+  .home-hero-wrap{ padding-top: 18px; }
+  .home-copy{ gap: 0; }
+  .home-kicker{ font-size: 10px; letter-spacing: .22em; }
+  .home-kicker::before{ width: 24px; }
+  .home-title{ font-size: 44px; margin-bottom: 16px; }
+  .home-hero-line{ margin-bottom: 14px; width: min(180px, 58vw); }
+  .home-phrase-rotator{ min-height: 30px; font-size: 17px; margin-bottom: 14px; }
+  .home-actions{ gap: 10px; }
+  .btn{ width: 100%; justify-content: center; }
+  .home-stats{ gap: 10px; margin-top: 18px; }
+  .home-stat{ padding: 16px 16px 18px; }
+  .home-visual{
+    min-height: auto;
+    display: grid;
+    gap: 14px;
+    margin-top: 6px;
+  }
+  .home-logo-card,
+  .home-photo-card{
+    width: min(100%, 280px);
+  }
+  .home-logo-main{ width: min(100%, 220px); }
+  .home-photo-card{
+    min-height: 180px;
+    padding: 12px;
+    border-radius: 22px;
+  }
+  .home-photo-main{
+    inset: 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+  }
+  .home-band,
+  .home-links-card,
+  .home-feature-card,
+  .home-closing-card,
+  .card{ padding: 20px 18px; }
+  .home-band-title,
+  .home-feature-title,
+  .home-closing-title,
+  .balcom-section-title{ max-width: none; }
+  .home-band-text,
+  .home-feature-intro,
+  .home-closing-text,
+  .home-feature-item p,
+  .balcom-large-text{ font-size: 17px; line-height: 1.5; }
+  .home-link-tile,
+  .home-feature-item,
+  .balcom-mini-card{ min-height: auto; }
+  .home-feature-item h3,
+  .contact-social-name,
+  .balcom-material-item strong{ font-size: 24px; }
+
+  .balcom-showcase{ gap: 18px; margin-top: 22px; }
+  .balcom-grid{ gap: 18px; }
+  .balcom-mini-card{ padding: 22px 18px; }
+
+  .contact-social-grid{ gap: 16px; }
+  .contact-social-card{
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 16px;
+  }
+  .contact-social-icon{
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+    border-radius: 16px;
+  }
+  .contact-social-icon svg{
+    width: 24px;
+    height: 24px;
+  }
+  .contact-social-handle{ font-size: 14px; }
+  .contact-social-link{ font-size: 14px; }
+
+  .footer{
+    margin-top: 18px;
+    padding: 26px 18px 30px;
+  }
+  .footer-title{ font-size: 18px; }
+  .footer-text{ font-size: 15px; line-height: 1.5; }
+}
