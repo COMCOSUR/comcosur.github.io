@@ -1147,6 +1147,99 @@ body.page-ready .topic-shell > *:nth-child(6){
   gap:18px;
 }
 
+.balcom-showcase{
+  display:grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.balcom-quote-card{
+  padding: 30px 32px;
+  background:
+    radial-gradient(260px 140px at right top, rgba(181,215,194,.12), transparent 72%),
+    linear-gradient(180deg, rgba(18,57,40,.94), rgba(12,38,27,.98));
+}
+
+.balcom-section-title{
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.balcom-large-text{
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.balcom-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.balcom-mini-card{
+  min-height: 210px;
+  display:flex;
+  flex-direction:column;
+}
+
+.balcom-mini-title{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.balcom-materials-card{
+  margin-top: 18px;
+  padding: 30px 32px;
+}
+
+.balcom-materials-head{
+  display:grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 22px;
+  align-items:end;
+  margin-bottom: 22px;
+}
+
+.balcom-materials-intro{
+  margin: 0;
+}
+
+.balcom-materials-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.balcom-material-item{
+  min-height: 180px;
+  padding: 22px;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.02)),
+    rgba(255,255,255,.02);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.balcom-material-item strong{
+  display:block;
+  margin: 6px 0 10px;
+  font-family: var(--brand-font);
+  font-size: 28px;
+  line-height: 1.06;
+}
+
+.balcom-material-item p{
+  margin: 0;
+}
+
+.balcom-material-label{
+  color: rgba(183,214,198,.78);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+}
+
 /* Footer */
 .footer{
   margin-top: 26px;
@@ -1221,7 +1314,10 @@ body.page-ready .topic-shell > *:nth-child(6){
   .home-links-grid,
   .home-feature-head,
   .home-feature-grid,
-  .home-closing-card{ grid-template-columns: 1fr; }
+  .home-closing-card,
+  .balcom-grid,
+  .balcom-materials-head,
+  .balcom-materials-grid{ grid-template-columns: 1fr; }
   .home-copy{
     align-items:center;
     text-align:center;
@@ -1278,6 +1374,7 @@ body.page-ready .topic-shell > *:nth-child(6){
   .home-closing-text,
   .home-feature-item p{ font-size: 18px; }
   .home-feature-item h3{ font-size: 26px; }
+  .balcom-large-text{ font-size: 22px; }
   .content-intro-text{ font-size: 17px; }
   .page-intro-text{ font-size: 18px; }
   .hero-title{ font-size: 44px; }
