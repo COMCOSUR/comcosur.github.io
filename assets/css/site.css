@@ -1382,6 +1382,22 @@ body.page-ready .topic-shell > *:nth-child(6){
   .home-hero-wrap{ padding-top: 26px; }
   .home-title{ font-size: 54px; }
   .home-lead{ font-size: 18px; }
+  .home-copy{ gap: 0; }
+  .home-phrase-rotator{
+    min-height: auto;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .home-phrase-rotator span{
+    position: static;
+    display: none;
+    transform: none;
+    opacity: 1;
+  }
+  .home-phrase-rotator span.is-active{
+    display: block;
+  }
+  .home-actions{ gap: 10px; }
   .home-stats{ grid-template-columns: 1fr; }
   .home-visual{ min-height: 380px; }
   .home-logo-main{ width: min(100%, 240px); }
