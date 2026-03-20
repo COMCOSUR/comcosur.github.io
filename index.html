@@ -34,6 +34,12 @@
         <div class="home-copy">
           <div class="home-kicker">Biblioteca Latino-Americana</div>
           <h1 class="home-title">BALCOM</h1>
+          <div class="home-hero-line" aria-hidden="true"><span></span></div>
+          <div class="home-phrase-rotator" id="home-phrase-rotator" aria-label="Frase destacada">
+            <span class="is-active">Esta es una frase</span>
+            <span>Esta es una frase</span>
+            <span>Esta es una frase</span>
+          </div>
 
           <div class="home-actions">
             <a class="btn home-btn-primary" href="contenidos.html">Explorar contenidos</a>
@@ -56,9 +62,10 @@
           </div>
         </div>
 
-        <div class="home-visual">
-          <div class="home-orb home-orb-one"></div>
-          <div class="home-orb home-orb-two"></div>
+          <div class="home-visual">
+            <div class="home-visual-texture" aria-hidden="true"></div>
+            <div class="home-orb home-orb-one"></div>
+            <div class="home-orb home-orb-two"></div>
 
           <div class="home-logo-card">
             <img class="home-logo-main" src="assets/img/balcom-nuevo.png.png" alt="Logo BALCOM" />
@@ -227,9 +234,9 @@
   </main>
 
   <script>
-    (() => {
-      const slideshow = document.getElementById('home-slideshow');
-      if (!slideshow) return;
+      (() => {
+        const slideshow = document.getElementById('home-slideshow');
+        if (!slideshow) return;
 
       const slides = Array.from(slideshow.querySelectorAll('.home-photo-main'));
       if (slides.length < 2) return;
@@ -252,10 +259,26 @@
         return nextIndex;
       };
 
-      setInterval(() => {
-        showSlide(nextRandomIndex());
-      }, 3200);
-    })();
+        setInterval(() => {
+          showSlide(nextRandomIndex());
+        }, 3200);
+      })();
+
+      (() => {
+        const rotator = document.getElementById('home-phrase-rotator');
+        if (!rotator) return;
+
+        const phrases = Array.from(rotator.querySelectorAll('span'));
+        if (phrases.length < 2) return;
+
+        let currentIndex = 0;
+
+        window.setInterval(() => {
+          phrases[currentIndex].classList.remove('is-active');
+          currentIndex = (currentIndex + 1) % phrases.length;
+          phrases[currentIndex].classList.add('is-active');
+        }, 2600);
+      })();
   </script>
   <script src="assets/js/site.js"></script>
 
