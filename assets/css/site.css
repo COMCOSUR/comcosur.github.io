@@ -1194,6 +1194,11 @@ body.page-ready .topic-shell > *:nth-child(6){
   gap: 18px;
   padding: 26px 24px;
   text-decoration:none;
+  --social-rgb: 180, 206, 191;
+  background:
+    radial-gradient(220px 120px at right top, rgba(var(--social-rgb), .14), transparent 72%),
+    linear-gradient(180deg, rgba(18,58,40,.88), rgba(13,45,31,.92));
+  border-color: rgba(var(--social-rgb), .22);
 }
 
 .contact-social-icon{
@@ -1204,9 +1209,9 @@ body.page-ready .topic-shell > *:nth-child(6){
   place-items:center;
   border-radius: 20px;
   background:
-    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
+    linear-gradient(180deg, rgba(var(--social-rgb), .18), rgba(255,255,255,.02)),
     rgba(255,255,255,.02);
-  border: 1px solid rgba(255,255,255,.09);
+  border: 1px solid rgba(var(--social-rgb), .28);
 }
 
 .contact-social-icon svg{
@@ -1240,6 +1245,22 @@ body.page-ready .topic-shell > *:nth-child(6){
   margin-top: 4px;
   color: rgba(224,242,230,.96);
   font-weight: 600;
+}
+
+.social-tiktok{
+  --social-rgb: 118, 226, 214;
+}
+
+.social-youtube{
+  --social-rgb: 255, 106, 106;
+}
+
+.social-instagram{
+  --social-rgb: 230, 134, 183;
+}
+
+.social-facebook{
+  --social-rgb: 118, 155, 255;
 }
 
 /* Footer */
