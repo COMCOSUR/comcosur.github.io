@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Semillas y Cultivo &middot; BALCOM</title>
-  <link rel="stylesheet" href="assets/css/site.css?v=202" />
+  <title>Tema 4 &middot; BALCOM</title>
+  <link rel="stylesheet" href="assets/css/site.css?v=203" />
 </head>
 <body>
 
@@ -34,14 +34,42 @@
         <p class="p">Sinopsis 4</p>
       </div>
 
-      <div class="card">
-        <h2 class="h2">Contenido Próximamente</h2>
-        <p class="p">
-          Este espacio está preparado para recibir materiales organizados dentro
-          de este tema.
-        </p>
-        <div class="hr"></div>
-        <a class="btn" href="contenidos.html">Volver a Contenidos</a>
+      <div class="card topic-search-card" data-topic-search>
+        <div class="topic-search-head">
+          <div>
+            <div class="page-intro-kicker">BUSCADOR</div>
+            <h2 class="h2">Explorar materiales</h2>
+          </div>
+          <p class="p topic-search-intro">Busc&aacute; por palabra clave y filtr&aacute; por PDF, audio o video.</p>
+        </div>
+
+        <div class="topic-search-controls">
+          <div class="topic-search-bar">
+            <input class="topic-search-input" type="search" placeholder="Buscar dentro de este tema" aria-label="Buscar dentro de este tema" data-topic-search-input />
+          </div>
+          <div class="topic-filter-row" aria-label="Filtrar por tipo">
+            <button class="topic-filter is-active" type="button" data-topic-filter="all" aria-pressed="true">Todos</button>
+            <button class="topic-filter" type="button" data-topic-filter="pdf" aria-pressed="false">PDF</button>
+            <button class="topic-filter" type="button" data-topic-filter="audio" aria-pressed="false">Audio</button>
+            <button class="topic-filter" type="button" data-topic-filter="video" aria-pressed="false">Video</button>
+          </div>
+        </div>
+
+        <div class="topic-search-meta">
+          <span data-topic-count>6 resultados</span>
+          <a class="btn" href="contenidos.html">Volver a Contenidos</a>
+        </div>
+
+        <div class="topic-results-grid">
+          <article class="topic-item" data-topic-item data-type="pdf" data-search="prueba 1 sinopsis 1 pdf semillas documento archivo"><span class="topic-item-type">PDF</span><h3>Prueba 1</h3><p class="topic-item-desc">Sinopsis 1</p><a class="topic-item-link" href="#">Abrir PDF</a></article>
+          <article class="topic-item" data-topic-item data-type="audio" data-search="prueba 2 sinopsis 2 audio semillas entrevista sonido"><span class="topic-item-type">Audio</span><h3>Prueba 2</h3><p class="topic-item-desc">Sinopsis 2</p><a class="topic-item-link" href="#">Escuchar audio</a></article>
+          <article class="topic-item" data-topic-item data-type="video" data-search="prueba 3 sinopsis 3 video semillas registro visual"><span class="topic-item-type">Video</span><h3>Prueba 3</h3><p class="topic-item-desc">Sinopsis 3</p><a class="topic-item-link" href="#">Ver video</a></article>
+          <article class="topic-item" data-topic-item data-type="pdf" data-search="prueba 4 sinopsis 4 pdf semillas lectura cuaderno"><span class="topic-item-type">PDF</span><h3>Prueba 4</h3><p class="topic-item-desc">Sinopsis 4</p><a class="topic-item-link" href="#">Abrir PDF</a></article>
+          <article class="topic-item" data-topic-item data-type="audio" data-search="prueba 5 sinopsis 5 audio semillas relato memoria"><span class="topic-item-type">Audio</span><h3>Prueba 5</h3><p class="topic-item-desc">Sinopsis 5</p><a class="topic-item-link" href="#">Escuchar audio</a></article>
+          <article class="topic-item" data-topic-item data-type="video" data-search="prueba 6 sinopsis 6 video semillas archivo documental"><span class="topic-item-type">Video</span><h3>Prueba 6</h3><p class="topic-item-desc">Sinopsis 6</p><a class="topic-item-link" href="#">Ver video</a></article>
+        </div>
+
+        <div class="topic-empty" data-topic-empty hidden>No hay resultados con esa b&uacute;squeda dentro de este tema.</div>
       </div>
     </div>
   </section>
@@ -49,8 +77,8 @@
   <div class="footer">
     <img class="footer-logo" src="assets/img/logo.jpeg" alt="Logo COMCOSUR" />
     <div class="footer-kicker">COMCOSUR</div>
-    <div class="footer-title">Asociación Civil Comunidades Pampa Costera del Sur</div>
-    <div class="footer-text">10 años de trayectoria en conservación, territorio y memoria biocultural.</div>
+    <div class="footer-title">Asociaci&oacute;n Civil Comunidades Pampa Costera del Sur</div>
+    <div class="footer-text">10 a&ntilde;os de trayectoria en conservaci&oacute;n, territorio y memoria biocultural.</div>
   </div>
 </main>
 <script src="assets/js/site.js"></script>
