@@ -44,7 +44,9 @@
       </a>
     `).join("");
   }
-  if (prefersReducedMotion) {`n    body.classList.add("page-ready");`n  }
+  if (prefersReducedMotion) {
+    body.classList.add("page-ready");
+  }
 
   document.addEventListener("click", (event) => {
     const link = event.target.closest("a");
