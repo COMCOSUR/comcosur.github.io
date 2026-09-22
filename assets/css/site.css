@@ -1164,6 +1164,19 @@ body.page-ready .topic-shell > *:nth-child(6){
   text-transform: uppercase;
 }
 
+.content-cover{
+  overflow:hidden;
+  border-style:solid;
+  border-color:rgba(var(--tone-rgb), .45);
+  background:rgba(var(--tone-rgb), .12);
+}
+
+.content-cover img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  object-position:center;
+}
 .tone-1{
   --tone-rgb: 56,135,94;
 }
