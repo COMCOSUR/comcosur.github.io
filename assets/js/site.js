@@ -44,10 +44,7 @@
       </a>
     `).join("");
   }
-  if (prefersReducedMotion) {
-    body.classList.add("page-ready");
-    return;
-  }
+  if (prefersReducedMotion) {`n    body.classList.add("page-ready");`n  }
 
   document.addEventListener("click", (event) => {
     const link = event.target.closest("a");
@@ -80,10 +77,19 @@
     const items = Array.from(searchRoot.querySelectorAll("[data-topic-item]"));
     const count = searchRoot.querySelector("[data-topic-count]");
     const empty = searchRoot.querySelector("[data-topic-empty]");
+    const grid = searchRoot.querySelector(".topic-results-grid");
 
-    if (!input || !items.length) return;
+    if (!input || !items.length || !grid) return;
+
+    const pageSize = 8;
+    const pagination = document.createElement("nav");
+    pagination.className = "topic-pagination";
+    pagination.setAttribute("aria-label", "Paginaci&oacute;n de materiales");
+    pagination.hidden = true;
+    grid.insertAdjacentElement("afterend", pagination);
 
     let activeFilter = "all";
+    let currentPage = 1;
 
     const normalize = (value) =>
       (value || "")
@@ -93,33 +99,62 @@
 
     const applyFilters = () => {
       const query = normalize(input.value.trim());
-      let visibleCount = 0;
-
-      items.forEach((item) => {
+      const matchingItems = items.filter((item) => {
         const type = item.dataset.type || "";
         const haystack = normalize(item.dataset.search || item.textContent || "");
-        const matchesType = activeFilter === "all" || type === activeFilter;
-        const matchesQuery = !query || haystack.includes(query);
-        const isVisible = matchesType && matchesQuery;
+        return (activeFilter === "all" || type === activeFilter) && (!query || haystack.includes(query));
+      });
+      const totalPages = Math.ceil(matchingItems.length / pageSize);
 
-        item.hidden = !isVisible;
-        if (isVisible) visibleCount += 1;
+      currentPage = Math.min(currentPage, Math.max(totalPages, 1));
+      const firstItem = (currentPage - 1) * pageSize;
+      const currentItems = new Set(matchingItems.slice(firstItem, firstItem + pageSize));
+
+      items.forEach((item) => {
+        item.hidden = !currentItems.has(item);
       });
 
       if (count) {
-        count.textContent = `${visibleCount} resultado${visibleCount === 1 ? "" : "s"}`;
+        count.textContent = `${matchingItems.length} resultado${matchingItems.length === 1 ? "" : "s"}`;
       }
 
       if (empty) {
-        empty.hidden = visibleCount !== 0;
+        empty.hidden = matchingItems.length !== 0;
+      }
+
+      if (totalPages > 1) {
+        pagination.hidden = false;
+        pagination.innerHTML = `
+          <button class="topic-page-control" type="button" data-topic-page="${currentPage - 1}" ${currentPage === 1 ? "disabled" : ""}>Anterior</button>
+          ${Array.from({ length: totalPages }, (_, index) => {
+            const page = index + 1;
+            return `<button class="topic-page-number${page === currentPage ? " is-active" : ""}" type="button" data-topic-page="${page}" aria-label="P&aacute;gina ${page}" aria-current="${page === currentPage ? "page" : "false"}">${page}</button>`;
+          }).join("")}
+          <button class="topic-page-control" type="button" data-topic-page="${currentPage + 1}" ${currentPage === totalPages ? "disabled" : ""}>Siguiente</button>
+        `;
+
+        pagination.querySelectorAll("[data-topic-page]").forEach((button) => {
+          button.addEventListener("click", () => {
+            currentPage = Number(button.dataset.topicPage);
+            applyFilters();
+            grid.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+          });
+        });
+      } else {
+        pagination.hidden = true;
+        pagination.innerHTML = "";
       }
     };
 
-    input.addEventListener("input", applyFilters);
+    input.addEventListener("input", () => {
+      currentPage = 1;
+      applyFilters();
+    });
 
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
         activeFilter = button.dataset.topicFilter || "all";
+        currentPage = 1;
 
         filterButtons.forEach((candidate) => {
           const isActive = candidate === button;

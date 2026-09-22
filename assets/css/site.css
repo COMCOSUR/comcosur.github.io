@@ -1386,6 +1386,47 @@ body.page-ready .topic-shell > *:nth-child(6){
   font-weight: 600;
 }
 
+.topic-pagination{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:24px;
+}
+
+.topic-page-control,
+.topic-page-number{
+  min-width:40px;
+  height:40px;
+  padding:0 13px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:999px;
+  background:rgba(7,23,15,.42);
+  color:rgba(241,251,245,.9);
+  font-family:var(--brand-font);
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  transition:transform .18s ease, background-color .18s ease, border-color .18s ease;
+}
+
+.topic-page-control:hover:not(:disabled),
+.topic-page-number:hover:not(.is-active){
+  transform:translateY(-1px);
+  border-color:rgba(96,198,136,.42);
+  background:rgba(34,100,64,.35);
+}
+
+.topic-page-number.is-active{
+  border-color:rgba(96,198,136,.48);
+  background:linear-gradient(180deg, rgba(76,176,118,.34), rgba(40,112,72,.28));
+}
+
+.topic-page-control:disabled{
+  opacity:.42;
+  cursor:not-allowed;
+}
 .topic-empty{
   margin-top: 18px;
   padding: 18px 20px;
