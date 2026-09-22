@@ -19,6 +19,31 @@
 
   window.addEventListener("pageshow", markReady);
 
+  const homeAmarasPicks = document.querySelector("[data-home-amaras-picks]");
+
+  if (homeAmarasPicks) {
+    const amaraDocuments = [
+      { title: "Interpretaci&oacute;n ambiental: ejemplo CHIA", summary: "Pr&aacute;ctica educativa para conocer los v&iacute;nculos biof&iacute;sicos y culturales de un territorio.", path: "interpretacion-ambiental-ejemplo-chia.pdf" },
+      { title: "Las plantas, or&iacute;genes del humano y dem&aacute;s seres vivos", summary: "Una reflexi&oacute;n sobre las plantas, la fotos&iacute;ntesis y el origen de la vida.", path: "las-plantas-origenes-del-humano-y-demas-seres-vivos.pdf" },
+      { title: "Los ajos gigantes y el planeamiento", summary: "Territorio, cultivos locales y soberan&iacute;a alimentaria.", path: "los-ajos-gigantes-y-el-planeamiento.pdf" },
+      { title: "Los ajos gigantes", summary: "Una mirada sobre los cultivos locales y el cuidado del territorio.", path: "los-ajos-gigantes.pdf" },
+      { title: "Peligros que vienen del r&iacute;o", summary: "Memoria y an&aacute;lisis de los riesgos socioambientales en las costas del R&iacute;o de la Plata.", path: "peligros-que-vienen-del-rio.pdf" },
+      { title: "Realidad, subjetividad y cambio", summary: "Una propuesta para pensar la realidad desde la acci&oacute;n y la conciencia colectiva.", path: "realidad-subjetividad-y-cambio.pdf" },
+      { title: "Si el mundo cae, est&aacute; la comunidad", summary: "Comunidad, Buen Vivir y autogesti&oacute;n para imaginar otros mundos posibles.", path: "si-el-mundo-cae-esta-la-comunidad.pdf" },
+      { title: "La batalla cultural", summary: "Una exploraci&oacute;n del poder simb&oacute;lico, los relatos y la dominaci&oacute;n cultural.", path: "la-batalla-cultural.pdf" },
+      { title: "Bosques inteligentes", summary: "Los bosques como comunidades vivas conectadas y colaborativas.", path: "bosques-inteligentes.pdf" },
+      { title: "Entendimiento y reciprocidad: el Ayni", summary: "El huerto como espacio de aprendizaje, cuidado y reciprocidad con la naturaleza.", path: "entendimiento-y-reciprocidad-el-ayni.pdf" }
+    ];
+
+    const picks = [...amaraDocuments].sort(() => Math.random() - 0.5).slice(0, 3);
+    homeAmarasPicks.innerHTML = picks.map((document, index) => `
+      <a class="home-link-tile" href="assets/pdf/amaras/${document.path}" target="_blank" rel="noopener">
+        <span class="home-link-index">AMARAS ${String(index + 1).padStart(2, "0")}</span>
+        <strong>${document.title}</strong>
+        <span>${document.summary}</span>
+      </a>
+    `).join("");
+  }
   if (prefersReducedMotion) {
     body.classList.add("page-ready");
     return;
