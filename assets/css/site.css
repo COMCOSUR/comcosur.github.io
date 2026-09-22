@@ -1287,6 +1287,79 @@ body.page-ready .topic-shell > *:nth-child(6){
   margin-bottom: 10px;
 }
 
+.hucom-gallery-section{
+  padding-top:0;
+}
+
+.hucom-gallery{
+  max-width:900px;
+  margin:0 auto;
+  padding:30px 32px;
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:var(--radius-lg);
+  background:linear-gradient(180deg, rgba(16,52,37,.88), rgba(9,31,21,.94));
+  box-shadow:var(--shadow);
+}
+
+.hucom-gallery-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:18px;
+}
+
+.hucom-gallery-head .h2{
+  margin:0;
+}
+
+.hucom-gallery-count{
+  color:rgba(183,214,198,.78);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.12em;
+}
+
+.hucom-gallery-stage{
+  position:relative;
+  overflow:hidden;
+  min-height:380px;
+  border-radius:22px;
+  background:rgba(3,15,9,.45);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.hucom-gallery-slide{
+  width:100%;
+  height:380px;
+  object-fit:cover;
+  object-position:center 48%;
+}
+
+.hucom-gallery-controls{
+  position:absolute;
+  right:16px;
+  bottom:16px;
+  display:flex;
+  gap:8px;
+}
+
+.hucom-gallery-control{
+  padding:10px 14px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  background:rgba(5,21,13,.78);
+  color:rgba(241,251,245,.94);
+  font-family:var(--brand-font);
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.hucom-gallery-control:disabled{
+  opacity:.5;
+  cursor:not-allowed;
+}
 .topic-search-card{
   padding: 30px 32px;
   background:
@@ -1888,4 +1961,12 @@ body.page-ready .topic-shell > *:nth-child(6){
 @media (max-width: 620px){
   .balcom-story{ padding:24px 20px; }
   .balcom-story p{ font-size:18px; line-height:1.62; }
+}
+@media (max-width: 620px){
+  .hucom-gallery{ padding:22px 18px; }
+  .hucom-gallery-head{ align-items:flex-start; flex-direction:column; gap:8px; }
+  .hucom-gallery-stage,
+  .hucom-gallery-slide{ min-height:260px; height:260px; }
+  .hucom-gallery-controls{ right:12px; bottom:12px; }
+  .hucom-gallery-control{ padding:9px 12px; font-size:13px; }
 }

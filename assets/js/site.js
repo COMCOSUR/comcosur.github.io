@@ -71,6 +71,34 @@
     }, 240);
   });
 
+  const hucomGalleries = Array.from(document.querySelectorAll("[data-hucom-gallery]"));
+
+  hucomGalleries.forEach((gallery) => {
+    const slides = Array.from(gallery.querySelectorAll("[data-hucom-gallery-slide]"));
+    const previous = gallery.querySelector("[data-hucom-gallery-prev]");
+    const next = gallery.querySelector("[data-hucom-gallery-next]");
+    const count = gallery.querySelector("[data-hucom-gallery-count]");
+
+    if (!slides.length || !previous || !next || !count) return;
+
+    let currentIndex = 0;
+
+    const showSlide = (index) => {
+      currentIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        const isActive = slideIndex === currentIndex;
+        slide.classList.toggle("is-active", isActive);
+        slide.hidden = !isActive;
+      });
+      count.textContent = `${currentIndex + 1} / ${slides.length}`;
+    };
+
+    previous.disabled = slides.length < 2;
+    next.disabled = slides.length < 2;
+    previous.addEventListener("click", () => showSlide(currentIndex - 1));
+    next.addEventListener("click", () => showSlide(currentIndex + 1));
+    showSlide(0);
+  });
   const topicSearches = Array.from(document.querySelectorAll("[data-topic-search]"));
 
   topicSearches.forEach((searchRoot) => {
