@@ -1177,6 +1177,15 @@ body.page-ready .topic-shell > *:nth-child(6){
   object-fit:cover;
   object-position:center 54%;$21.05);
 }
+.content-cover-hiscun img{
+  object-position:center;
+  transform:scale(1.01);
+}
+
+.content-cover-hucom img{
+  object-position:center 47%;
+  transform:scale(1);
+}
 .tone-1{
   --tone-rgb: 56,135,94;
 }
