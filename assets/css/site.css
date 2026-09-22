@@ -1418,9 +1418,36 @@ body.page-ready .topic-shell > *:nth-child(6){
 }
 
 .topic-item-link{
-  margin-top: auto;
-  color: rgba(224,242,230,.96);
-  font-weight: 600;
+  display:inline-flex;
+  align-items:center;
+  align-self:flex-start;
+  gap:9px;
+  margin-top:auto;
+  padding:10px 15px;
+  border:1px solid rgba(96,198,136,.42);
+  border-radius:999px;
+  background:linear-gradient(180deg, rgba(58,153,99,.34), rgba(25,89,56,.42));
+  color:rgba(241,251,245,.98);
+  font-family:var(--brand-font);
+  font-size:15px;
+  font-weight:700;
+  line-height:1;
+  box-shadow:0 8px 18px rgba(0,0,0,.16);
+  transition:transform .18s ease, background-color .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.topic-item-link::after{
+  content:"\2197";
+  font-family:system-ui, sans-serif;
+  font-size:16px;
+  line-height:1;
+}
+
+.topic-item-link:hover{
+  transform:translateY(-2px);
+  border-color:rgba(142,224,171,.68);
+  background:linear-gradient(180deg, rgba(75,181,117,.5), rgba(31,112,69,.52));
+  box-shadow:0 12px 24px rgba(0,0,0,.22);
 }
 
 .topic-pagination{
