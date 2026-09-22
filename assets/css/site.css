@@ -1218,6 +1218,30 @@ body.page-ready .topic-shell > *:nth-child(6){
   margin-bottom: 12px;
 }
 
+.balcom-story-intro{
+  margin-bottom:22px;
+}
+
+.balcom-story{
+  max-width:980px;
+  padding:38px 42px;
+  background:
+    radial-gradient(320px 190px at 100% 0%, rgba(126,182,145,.12), transparent 72%),
+    linear-gradient(180deg, rgba(17,55,39,.88), rgba(10,34,24,.94));
+}
+
+.balcom-story p{
+  max-width:76ch;
+  margin:0 0 22px;
+  font-family:var(--body-elegant);
+  font-size:21px;
+  line-height:1.72;
+  color:rgba(241,251,245,.9);
+}
+
+.balcom-story p:last-child{
+  margin-bottom:0;
+}
 .balcom-large-text{
   font-size: 28px;
   line-height: 1.5;
@@ -1810,4 +1834,9 @@ body.page-ready .topic-shell > *:nth-child(6){
   }
   .footer-title{ font-size: 18px; }
   .footer-text{ font-size: 15px; line-height: 1.5; }
+}
+
+@media (max-width: 620px){
+  .balcom-story{ padding:24px 20px; }
+  .balcom-story p{ font-size:18px; line-height:1.62; }
 }
